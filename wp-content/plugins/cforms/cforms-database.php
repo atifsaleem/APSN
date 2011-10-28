@@ -73,7 +73,7 @@ jQuery("#flex1").flexigrid ( {
 		{display: '<?php _e('Date','cforms'); ?>', name : 'sub_date'},
 		{display: '<?php _e('IP','cforms'); ?>', name : 'ip'}
 		],<?php echo $dashboard; ?>
-	sortname: "id",
+	sortname: "email",
 	sortorder: "desc",
 	usepager: true,
 	title: '<?php _e('Form Submissions','cforms'); ?>',

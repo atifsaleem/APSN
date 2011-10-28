@@ -1,0 +1,567 @@
+# Copyright (C) 2010 Page Security by Contexture
+# This file is distributed under the same license as the Page Security by Contexture package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Page Security by Contexture 1.3.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/contexture-page-security\n"
+"POT-Creation-Date: 2011-01-04 19:07:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2011-04-08 21:19+0100\n"
+"Last-Translator: Tristano Ajmone <tajmone@libero.it>\n"
+"Language-Team: \n"
+
+#: views/group-delete.php:4
+#: views/options.php:6
+#: views/group-new.php:3
+#: views/group-edit.php:4
+#: views/groups.php:5
+msgid "You do not have sufficient permissions to manage options for this site."
+msgstr "Non hai privilegi sufficienti per gestire le opzioni di questo sito."
+
+#: views/group-delete.php:26
+msgid "An error occurred. The group was not fully deleted."
+msgstr "Errore! Il gruppo non è stato eliminato del tutto."
+
+#: views/group-delete.php:28
+msgid "group was deleted."
+msgstr "gruppo eliminato."
+
+#: views/group-delete.php:28
+#: views/group-delete.php:40
+#: views/group-delete.php:42
+#: views/group-edit.php:98
+#: views/group-edit.php:100
+msgid "View all groups"
+msgstr "Mostra tutti i gruppi"
+
+#: views/group-delete.php:40
+#: views/group-edit.php:98
+msgid "A group with that id does not exist."
+msgstr "Non esiste alcun gruppo con questo ID."
+
+#: views/group-delete.php:42
+msgid "System groups cannot be deleted."
+msgstr "Non è possibile eliminare i gruppi di sistema."
+
+#: views/group-delete.php:53
+msgid "Confirm Deletion"
+msgstr "Conferma di voler eliminare"
+
+#: views/options.php:30
+msgid "Custom pages were deactivated. You must select a valid page from each list."
+msgstr "Le pagine personalizzate sono state disattivate. Devi selezionare una pagina valida da ogni lista."
+
+#: views/options.php:56
+msgid "Page Security settings saved."
+msgstr "Settaggi di protezione pagina salvati."
+
+#: views/options.php:65
+#: views/options.php:66
+msgid "-- Choose AD Message Page --"
+msgstr "-- Scegli la Pagina di Accesso Negato --"
+
+#: views/options.php:122
+msgid "Access Denied Messages"
+msgstr "Messaggi di Accesso Negato"
+
+#: views/options.php:123
+msgid "Use these settings to determine what your users will see when accessing content they are not allowed to view."
+msgstr "Usa queste impostazioni per stabilire cosa mostrare agli utenti che accedono a contenuti protetti."
+
+#: views/options.php:127
+msgid "Use Custom Pages:"
+msgstr "Usa Pagine Personalizzate:"
+
+#: views/options.php:131
+msgid "Use <strong>pages</strong> for default access denied screens"
+msgstr "Usa delle <strong>pagine</strong> per visualizzare le schermate predefinite di accesso negato"
+
+#: views/options.php:137
+#: views/options.php:157
+msgid "Authenticated Users:"
+msgstr "Utenti Autenticati:"
+
+#: views/options.php:142
+msgid "The \"access denied\" page to show users who <strong><em>are logged in</em></strong>."
+msgstr "La pagine di \"accesso negato\" da mostrare agli utenti che sono <strong><em>loggati</em></strong>."
+
+#: views/options.php:147
+#: views/options.php:166
+msgid "Anonymous Users:"
+msgstr "Utenti Anonimi:"
+
+#: views/options.php:152
+msgid "The \"access denied\" page to show users who are <strong><em>not</em></strong> logged in."
+msgstr "La pagine di \"accesso negato\" da mostrare agli utenti che <strong><em> non sono</em></strong> loggati."
+
+#: views/options.php:161
+msgid "The \"access denied\" message to show users who are logged in (HTML OK)."
+msgstr "Il messaggio di \"accesso negato\" da mostrare agli utenti che sono loggati (puoi usare HTML)."
+
+#: views/options.php:170
+msgid "The \"access denied\" message to show users who are <strong><em>not</em></strong> logged in (HTML OK)."
+msgstr "Il messaggio di \"accesso negato\" da mostrare agli utenti che <strong><em>non sono</em></strong> loggati (puoi usare HTML)."
+
+#: views/options.php:174
+msgid "Global Security Features"
+msgstr "Proprietà di Protezione Globale"
+
+#: views/options.php:175
+msgid "These options selectively enable/disable Page Security features."
+msgstr "Queste opzioni abilitano/disabilitano le proprietà di Protezione Globale."
+
+#: views/options.php:179
+msgid "Enable Menu Filtering:"
+msgstr "Abilita Filtraggio del Menù:"
+
+#: views/options.php:183
+msgid "Use permissions to filter menu items*"
+msgstr "Usa i permessi per filtrare gli elementi del menù*"
+
+#: views/options.php:184
+msgid "*Restricted content will be removed from menus unless user is authenticated"
+msgstr "*I contenuti protetti verranno rimossi dai menù (tranne per gli utenti autenticati)."
+
+#: views/options.php:190
+msgid "Enable RSS Filtering:"
+msgstr "Abilita il Filtraggio RSS:"
+
+#: views/options.php:194
+msgid "Use permissions to filter RSS content*"
+msgstr "Usa i permessi per filtrare i contenuti RSS*"
+
+#: views/options.php:195
+msgid "*Feed content for restricted posts will be removed unless user is authenticated<br/> Warning: This will hide protected content from most RSS readers."
+msgstr "*I contenuti di Feed degli articoli protetti verrà rimosso a meno che l'utente non sia autenticato<br/>Avvertenza: Questo occulterà il contenuto alla maggior parte degli RSS readers."
+
+#: views/options.php:200
+msgid "Save Changes"
+msgstr "Salva Modifiche"
+
+#: views/group-new.php:15
+#: views/group-edit.php:114
+msgid "Group Name <span class=\"description\">(required)</span>"
+msgstr "Nome del Gruppo <span class=\"description\">(obbligatorio)</span>"
+
+#: views/group-new.php:25
+#: views/group-edit.php:124
+#: views/user-edit-groups.php:69
+#: views/user-edit-groups.php:77
+msgid "Description"
+msgstr "Descrizione"
+
+#: views/group-edit.php:19
+msgid "An error occurred. Group Details could not be updated."
+msgstr "Si è verificato un errore. Non è stato possibile aggiornare i Dettagli del Gruppo."
+
+#: views/group-edit.php:22
+msgid "Group details have been saved."
+msgstr "I Dettagli del Gruppo sono stati salvati."
+
+#: views/group-edit.php:22
+msgid "Return to group list"
+msgstr "Torna alla lsita dei gruppi."
+
+#: views/group-edit.php:30
+msgid "User &quot;%s&quot; does not exist."
+msgstr "L'utente &quot;%s&quot; non esiste."
+
+#: views/group-edit.php:41
+msgid "User is already in this group."
+msgstr "L'utente è già membro di questo gruppo."
+
+#: views/group-edit.php:46
+msgid "An error occurred. User could not be added to the group."
+msgstr "Si è verificato un errore. Non è stato possibile aggiungere l'utente al gruppo."
+
+#: views/group-edit.php:48
+msgid "User &quot;%s&quot; has been added to the group."
+msgstr "L'utente &quot;%s&quot; è stato aggiunto al gruppo."
+
+#: views/group-edit.php:56
+msgid "An error occurred. User could not be removed from group."
+msgstr "Si è verificato un errore. Non è stato possibile rimuovere l'utente dal gruppo."
+
+#: views/group-edit.php:58
+msgid "User &quot;%s&quot; was removed from the group."
+msgstr "L'utente &quot;%s&quot; è stato rimosso dal gruppo."
+
+#: views/group-edit.php:100
+msgid "System groups cannot be edited."
+msgstr "I gruppi di sistema non possono essere modificati."
+
+#: views/group-edit.php:105
+msgid "<h3>Group Details</h3>"
+msgstr "<h3>Dettagli del Gruppo</h3>"
+
+#: views/group-edit.php:138
+msgid "<h3>Group Members</h3>"
+msgstr "<h3>Membri del Gruppo</h3>"
+
+#: views/group-edit.php:143
+msgid "Add User"
+msgstr "Aggiungi Utente"
+
+#: views/group-edit.php:149
+#: views/group-edit.php:157
+msgid "Username"
+msgstr "Nome utente"
+
+#: views/group-edit.php:150
+#: views/group-edit.php:158
+#: views/user-edit-groups.php:68
+#: views/user-edit-groups.php:76
+msgid "Name"
+msgstr "Nome"
+
+#: views/group-edit.php:151
+#: views/group-edit.php:159
+msgid "Email"
+msgstr "eMail"
+
+#: views/group-edit.php:152
+#: views/group-edit.php:160
+#: views/group-edit.php:181
+msgid "Expires"
+msgstr "Scadenza"
+
+#: views/group-edit.php:166
+msgid "No users have been added to this group."
+msgstr "Nessun utente è stato aggiunto a questo gruppo."
+
+#: views/group-edit.php:172
+msgid "User"
+msgstr "Utente"
+
+#: views/group-edit.php:187
+msgid "End Date"
+msgstr "Data Scadenza"
+
+#: views/group-edit.php:211
+msgid "Cancel"
+msgstr "Cancella"
+
+#: views/group-edit.php:212
+msgid "Update"
+msgstr "Aggiorna"
+
+#: views/group-edit.php:222
+msgid "<h3>Associated Content</h3>"
+msgstr "<h3>Contenuti Associati</h3>"
+
+#: views/group-edit.php:226
+#: views/group-edit.php:233
+msgid "Title"
+msgstr "Titolo"
+
+#: views/group-edit.php:228
+#: views/group-edit.php:235
+msgid "Type"
+msgstr "Tipo"
+
+#: views/group-edit.php:241
+msgid "No content is attached to this group."
+msgstr "Nessun contenuto associato a questo gruppo."
+
+#: views/user-edit-groups.php:70
+#: views/user-edit-groups.php:78
+msgid "Users"
+msgstr "Utenti"
+
+#: views/user-edit-groups.php:86
+msgid "You are not currently a member of any groups."
+msgstr "Al momento non fai parte di alcun gruppo."
+
+#: views/user-edit-groups.php:93
+msgid "This user has not been added to any custom groups. Select a group above or visit any <a href=\"%s\">group detail page</a>."
+msgstr "Questo utente non è stato aggiunto ad alcun gruppo personalizzato. Seleziona un gruppo tra quelli sopra oppure visita una <a href=\"%s\">pagina di dettagli dei gruppi</a>."
+
+#: views/groups.php:43
+#: contexture-page-security.php:890
+msgid "Groups"
+msgstr "Gruppi"
+
+#: views/groups.php:43
+msgid "Add New"
+msgstr "Aggiungi Nuovo"
+
+#: views/groups.php:67
+msgid "You have not created any groups. Please <a href=\"%s\">add a group</a>."
+msgstr "Non hai creato nessun gruppo. Per favore <a href=\"%s\">aggiungi un gruppo</a>."
+
+#: contexture-page-security.php:94
+msgid "Missing Requirement:"
+msgstr "Requisiti Mancanti:"
+
+#: contexture-page-security.php:95
+msgid "Page Security requires PHP5 or higher. Your server is running %s. Please contact your hosting service about enabling PHP5 support."
+msgstr "Page Security necessita di PHP5 o superiore. Il tuo server utilizza %s. Per favore contatta il tuo servizio di hosting per richiedere supporto sull'abilitazione di PHP5."
+
+#: contexture-page-security.php:96
+msgid "Return to plugin page"
+msgstr "Ritorna alla pagina del plugin"
+
+#: contexture-page-security.php:167
+msgid "Registered Users"
+msgstr "Utenti Registrati"
+
+#: contexture-page-security.php:167
+msgid "This group automatically applies to all authenticated users."
+msgstr "Questo gruppo è applicato automaticamente a tutti gli utenti autenticati."
+
+#: contexture-page-security.php:181
+#: contexture-page-security.php:254
+#: contexture-page-security.php:282
+#: contexture-page-security.php:327
+#: contexture-page-security.php:356
+#: contexture-page-security.php:403
+msgid "Admin user is unauthorized."
+msgstr "L'utente amministratore non è autorizzato."
+
+#: contexture-page-security.php:221
+#: contexture-page-security.php:1524
+msgid "No groups have been added yet."
+msgstr "Non è stato ancora aggiunto alcun gruppo."
+
+#: contexture-page-security.php:229
+#: contexture-page-security.php:1529
+msgid "remove"
+msgstr "rimuovi"
+
+#: contexture-page-security.php:234
+#: contexture-page-security.php:1533
+msgid "ancestor"
+msgstr "antenato"
+
+#: contexture-page-security.php:258
+msgid "Group removed"
+msgstr "Gruppo eliminato"
+
+#: contexture-page-security.php:260
+#: contexture-page-security.php:308
+msgid "Query failed"
+msgstr "La query non è riuscita"
+
+#: contexture-page-security.php:300
+msgid "Already in group"
+msgstr "Già presente nel gruppo"
+
+#: contexture-page-security.php:310
+msgid "User enrolled in group"
+msgstr "Utente aggiunto al gruppo"
+
+#: contexture-page-security.php:338
+msgid "Query failed!"
+msgstr "La query non è riuscita!"
+
+#: contexture-page-security.php:340
+msgid "User membership updated"
+msgstr "Affiliazione utente aggiornata"
+
+#: contexture-page-security.php:363
+msgid "User not found"
+msgstr "Utente non trovato"
+
+#: contexture-page-security.php:367
+msgid "This user has not been added to any static groups. Select a group above or visit any <a href=\"users.php?page=ps_groups\">group detail page</a>.</td>"
+msgstr "Questo utente non è stato aggiunto ad alcun gruppo statico. Scegli un gruppo tra quelli sopra o visita qualsiasi <a href=\"users.php?page=ps_groups\">pagina dettagli dei gruppi</a>.</td>"
+
+#: contexture-page-security.php:369
+msgid "User unenrolled from group"
+msgstr "Utente espulso dal gruppo"
+
+#: contexture-page-security.php:442
+msgid "You do not have the appropriate group permissions to access this page. Please try <a href=\"%s\">logging in</a> or contact an administrator for assistance."
+msgstr "Non possiedi i privilegi di gruppo richiesti per accedere a questa pagina. Prova a <a href=\"%s\">loggarti</a> o a conttare un amministratore."
+
+#: contexture-page-security.php:443
+msgid "You do not have the appropriate group permissions to access this page. If you believe you <em>should</em> have access to this page, please contact an administrator for assistance."
+msgstr "Non possiedi i privilegi di gruppo richiesti per accedere a questa pagina. Se ritiieni che <em>dovresti</em> avere accesso a questa pagina, contta un amministratore."
+
+#: contexture-page-security.php:518
+#: contexture-page-security.php:535
+msgid "Access Denied. Redirecting to %s"
+msgstr "Accesso Negato. Sarai reindirizzato a %s"
+
+#: contexture-page-security.php:521
+#: contexture-page-security.php:526
+#: contexture-page-security.php:538
+#: contexture-page-security.php:542
+msgid "Go to home page"
+msgstr "Vai alla home page"
+
+#: contexture-page-security.php:724
+msgid "Official Page Security Support"
+msgstr "Pagina di supporto ufficiale di Page Security"
+
+#: contexture-page-security.php:728
+msgid "<h4><strong>Page Security:</strong></h4><p>To add a user to a group, check the users to add, and select a group from the \"Add to group...\" drop down. Click \"Add\" to save the changes.</p>"
+msgstr "<h4><strong>Page Security:</strong></h4><p>Per aggiungere utenti a un gruppo spunta gli utenti da ggiungere e seleziona un gruppo dal selettore a cascata \"Add to group....\". Clicca \"Aggiungi\" per salvare le modifice.</p>"
+
+#: contexture-page-security.php:730
+msgid "<h4><strong>Page Security:</strong></h4><p>To restrict access to this page, find the \"Restrict Access\" sidebar and check the box next to \"Protect this page and it's decendants. This will reveal some additional options.</p><p>If a page is protected, but you don't have any groups assigned to it, only admins will be able to see or access the page. To give users access to the page, select a group from the \"Available Groups\" drop-down and click \"Add\". You may need to <a href=\"%s\">create a group</a>, if you haven't already.</p><p>To remove a group, either uncheck the \"Protect this page...\" box (all permissions will be removed), or find the group in the \"Allowed Groups\" list and click \"Remove\".</p><p>All changes are saved immediately. There is no need to click \"Update\" in order to save your security settings.</p>"
+msgstr "<h4><strong>Page Security:</strong></h4><p>Per limitare l'accesso a questo articolo, trova il menù laterale \"Restrict Access\" e spunta la casella accanto a \"Proteggi questa pagina e i suoi discendenti.\" Appariranno ulteriori opzioni.</p><p>Se un articolo è protetto ma non vi sono gruppi associati ad esso, solo gli amministratori saranno in grado di visualizzarlo o accedervi. Per consentire agli utenti l'accesso all'articolo, seleziona un gruppo dal menù a discesa \"Available Groups\" e clicca su \"Add\". Potresti dover <a href=\"%s\">creare un gruppo</a> nel caso non ve ne fossero.</p><p>Per rimuovere un gruppo, puoi deselezionare la spunta della casella \"Proteggi questa pagina...\" (tutti i permessi verrano rimossi), oppure trovare il gruppo nella lista \"Gruppi Autorizzati\" e cliccare su \"Rimuovi\".</p><p>Tutte le modifiche saranno salvate immediatamente. Non è necessario cliccare su \"Aggiorna\" per salvare le impostazioni di sicurezza.</p>"
+
+#: contexture-page-security.php:732
+msgid "<h4><strong>Page Security:</strong></h4><p>To restrict access to this post, find the \"Restrict Access\" sidebar and check the box next to \"Protect this page and it's decendants. This will reveal some additional options.</p><p>If a post is protected, but you don't have any groups assigned to it, only admins will be able to see or access the post. To give users access to the post, select a group from the \"Available Groups\" drop-down and click \"Add\". You may need to <a href=\"%s\">create a group</a>, if you haven't already.</p><p>To remove a group, either uncheck the \"Protect this page...\" box (all permissions will be removed), or find the group in the \"Allowed Groups\" list and click \"Remove\".</p><p>All changes are saved immediately. There is no need to click \"Update\" in order to save your security settings.</p>"
+msgstr "<h4><strong>Page Security:</strong></h4><p>Per limitare l'accesso a questo articolo, trova il menù laterale \"Restrict Access\" e spunta la casella accanto a \"Proteggi questa pagina e i suoi discendenti.\" Appariranno ulteriori opzioni.</p><p>Se un articolo è protetto ma non vi sono gruppi associati ad esso, solo gli amministratori saranno in grado di visualizzarlo o accedervi. Per consentire agli utenti l'accesso all'articolo, seleziona un gruppo dal menù a discesa \"Available Groups\" e clicca su \"Add\". Potresti dover <a href=\"%s\">creare un gruppo</a> nel caso non ve ne fossero.</p><p>Per rimuovere un gruppo, puoi deselezionare la spunta della casella \"Proteggi questa pagina...\" (tutti i permessi verrano rimossi), oppure trovare il gruppo nella lista \"Gruppi Autorizzati\" e cliccare su \"Rimuovi\".</p><p>Tutte le modifiche saranno salvate immediatamente. Non è necessario cliccare su \"Aggiorna\" per salvare le impostazioni di sicurezza.</p>"
+
+#: contexture-page-security.php:734
+msgid "<h4><strong>Page Security:</strong></h4><p>The lock icon shows which pages currently have restrictions. The lighter icons show which pages are simply inheriting their parent's restrictions, while dark icons appear only on pages that have their own restrictions.</p>"
+msgstr "<h4><strong>Page Security:</strong></h4><p>L'icona col luchetto mostra quali pagine sono attualmente protette. Le icone più chiare mostrano quali pagine stanno semplicemente eriditando la protezione dai loro antenati; le icone scure invece appaiono solo per le pagine che hanno una protezione propria.</p>"
+
+#: contexture-page-security.php:736
+msgid "<h4><strong>Page Security:</strong></h4><p>The lock icon shows which posts currently have restrictions.</p>"
+msgstr "<h4><strong>Page Security:</strong></h4><p>L'icona del lucchetto mostra quali articoli sono attualmente protetti.</p>"
+
+#: contexture-page-security.php:741
+msgid "<p>This screen shows a list of all the groups currently available. Groups are used to arbitrarily \"group\" users together for permissions purposes. Once you \"attach\" one or more groups to a page or post, only users in one of those groups will be able to access it!</p><p>To view users in a group, simply click on the group's name.</p><p><strong>Registered Users</strong> - This is a system group that is automatically applied to all registered users. It can't be edited or deleted because it's managed by WordPress automatically.</p><p><strong>For more information:</strong></p>"
+msgstr "<p>Questa schermata mostra la lista di tutti i gruppi attualmente disponibili. I gruppi vengono utilizzati per \"raggruppare\" arbitrariamente assieme utenti per scopi legati ai permessi. Una volta \"associati\" uno o più gruppi ad una pagina o articolo, soltanto gli utenti parte di quei gruppi potranno accederne ai contenut!</p><p>Per visualizzare gli utenti di un gruppo basta cliccare sul nome del gruppo.</p><p><strong>Registered Users</strong> - (Utenti Registrati) Questo è un gruppo di sistema che viene applicato automaticamente a tutti gli utenti registrati. Non può essere modificato o cancellato poiché è gestito automaticamente da WordPress.</p><p><strong>Per maggiori informazioni:</strong></p>"
+
+#: contexture-page-security.php:742
+msgid "<p>This screen allows you to add a new group. Simply enter a new, unique name for your group, and an optional description.</p><p><strong>For more information:</strong></p>"
+msgstr "<p>Questa schermata consente di aggiungere un nuovo gruppo. Basta inserire un nuovo nome (unico) per il gruppo e una descrizione (opzionale).</p><p><strong>Per maggiori informazioni:</strong></p>"
+
+#: contexture-page-security.php:743
+msgid "<p>This screen shows you all the details about the current group, and allows you to edit some of those details.</p><p><strong>Group Details</strong> - Change a group's title or description.</p><p><strong>Group Members</strong> - A list of users currently attached to the group. You also add users to a group if you know their username (users can also be added to groups from their profile pages).</p><p><strong>Associated Content</strong> - A list of all the pages and posts this group is attached to.</p><p><strong>For more information:</strong></p>"
+msgstr "<p>Questa schermata mostra tutti i dettagli sul gruppo in questione, e consente di modificarne alcuni dettagli.</p><p><strong>Dettagli del Gruppo</strong> - Modifica il nome o la descrizione di un gruppo.</p><p><strong>Membri del Gruppo</strong> - La lista degli utenti attualmente annessi al gruppo. Puoi anche aggiungere un utente al gruppo se ne conosci lo username (gli utenti possono anche essere aggiunti ai gruppi dalla loro pagina di profilo).</p><p><strong>Contenuti Associati</strong> - La lista delle pagine e articoli associati a questo gruppo.</p><p><strong>Per maggiori informazioni:</strong></p>"
+
+#: contexture-page-security.php:746
+msgid "<p>This screen allows you to delete the selected group. Once you click \"Confirm Deletion\", the group will be permanently deleted, and all users will be removed from the group.</p><p>Also note that if this is the only group attached to any \"restricted\" pages, those pages will not longer be accessible to anyone but administrators.</p><p><strong>For more information:</strong></p>"
+msgstr "<p>Questa schermata di consente di eliminare i gruppi selezionati. Un volta cliccato su \"Conferma di voler eliminare\", il gruppo verrà eliminato definitivamente, e tutti gli utenti verrano rimossi dal gruppo.</p><p>Inoltre, se questo è l'unico gruppo associato a pagine \"protette\", queste pagine non saranno più accessibili a nessuno al di fuori degli amministratori.</p><p><strong>Per ulteriori informazioni:</strong></p>"
+
+#: contexture-page-security.php:749
+msgid "<p>This screen contains general settings for Page Security.</p><p><strong>For more information:</strong></p>"
+msgstr "<p>Questa schermata contiene le impostazioni generali di Page Security.</p><p><strong>Per ulteriori informazioni:</strong></p>"
+
+#: contexture-page-security.php:761
+msgid "You cannot unprotect this page. It is protected by a parent or ancestor."
+msgstr "Non puoi sproteggere questa pagina. È protetta da un genitore o da un antenato."
+
+#: contexture-page-security.php:762
+msgid "This will completely erase this page's security settings and make it accessible to the public. Continue?"
+msgstr "Stai per rimuovere completamente le impostazioni di sicurezza di questa pagina rendendola accessibile al pubblico. Vuoi procedere?"
+
+#: contexture-page-security.php:763
+msgid "Are you sure you want to remove group \"%s\" from this page?"
+msgstr "Sei sicuro di voler rimuovere il gruppo  \"%s\" da questa pagina?"
+
+#: contexture-page-security.php:764
+msgid "Are you sure you want to remove this group from %s ?"
+msgstr "Sei sicuro di voler rimuovere questo gruppo da %s ?"
+
+#: contexture-page-security.php:765
+msgid "Remove this user from the group?"
+msgstr "Rimuovere questo utente dal gruppo?"
+
+#: contexture-page-security.php:890
+msgid "Group Management"
+msgstr "Gestione Gruppi"
+
+#: contexture-page-security.php:891
+msgid "Add a Group"
+msgstr "Aggiungi un Gruppo"
+
+#: contexture-page-security.php:891
+msgid "Add Group"
+msgstr "Aggiungi Gruppo"
+
+#: contexture-page-security.php:1082
+msgid "Membership"
+msgstr "Appartenenza"
+
+#: contexture-page-security.php:1083
+msgid "Unenroll"
+msgstr "Espelli"
+
+#: contexture-page-security.php:1084
+#: contexture-page-security.php:1150
+msgid "View"
+msgstr "Visualizza"
+
+#: contexture-page-security.php:1148
+msgid "Edit"
+msgstr "Modifica"
+
+#: contexture-page-security.php:1149
+msgid "Remove"
+msgstr "Elimina"
+
+#: contexture-page-security.php:1491
+msgid " Protect this page and it's descendants"
+msgstr "Proteggi questa pagina ed i suoi figli"
+
+#: contexture-page-security.php:1497
+msgid "Edit Parent"
+msgstr "Modifica Genitore"
+
+#: contexture-page-security.php:1504
+msgid "Available Groups"
+msgstr "Gruppi Disponibili"
+
+#: contexture-page-security.php:1504
+msgid "New Group"
+msgstr "Nuovo Gruppo"
+
+#: contexture-page-security.php:1506
+msgid "Select"
+msgstr "Seleziona"
+
+#: contexture-page-security.php:1513
+msgid "Add"
+msgstr "Aggiungi"
+
+#: contexture-page-security.php:1514
+msgid "Allowed Groups"
+msgstr "Gruppi Autorizzati"
+
+#: contexture-page-security.php:1541
+msgid "<p>This is currently an Access Denied page. You cannot restrict it.</p><p><a href=\"%s\">View Security Settings</a></p>"
+msgstr "<p>Questa è una pagina ad Accesso Negato. Non puoi proteggerla.</p><p><a href=\"%s\">Vedi le Impostazioni di Sicurezza</a></p>"
+
+#: contexture-page-security.php:1547
+msgid "<p>You need to publish before you can update security settings.</p>"
+msgstr "<p>Per poter modificare le impostazioni di sicurezza devi prima pubblicare.</p>"
+
+#: contexture-page-security.php:1567
+msgid "Groups attached to this page:"
+msgstr "Gruppi collegati a questa pagina:"
+
+#: contexture-page-security.php:1575
+msgid "No groups attached."
+msgstr "Nessun gruppo collegato."
+
+#: contexture-page-security.php:1599
+msgid "Groups Required:"
+msgstr "Gruppi Richiesti:"
+
+#: contexture-page-security.php:1600
+msgid "To access this page, users must be a member of at least one group from each set of groups."
+msgstr "Per accedere a questa pagina gli utenti devono essere membri di almeno uno gruppo della lista."
+
+#: contexture-page-security.php:1623
+msgid "No groups attached"
+msgstr "Nessun gruppo collegato."
+
+#. Plugin Name of the plugin/theme
+msgid "Page Security by Contexture"
+msgstr "Page Security by Contexture"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.contextureintl.com/open-source-projects/contexture-page-security-for-wordpress/"
+msgstr "http://www.contextureintl.com/open-source-projects/contexture-page-security-for-wordpress/"
+
+#. Description of the plugin/theme
+msgid "Allows admins to create user groups and restrict access to sections of the site by group."
+msgstr "Permette agli amministratori di creare gruppi di utenti e limitare l'accesso ad aree del sito a determinati gruppi."
+
+#. Author of the plugin/theme
+msgid "Contexture Intl, Matt VanAndel, Jerrol Krause"
+msgstr "Contexture Intl, Matt VanAndel, Jerrol Krause"
+
+#. Author URI of the plugin/theme
+msgid "http://www.contextureintl.com"
+msgstr "http://www.contextureintl.com"
+

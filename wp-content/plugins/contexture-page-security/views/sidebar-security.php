@@ -1,0 +1,1 @@
+<?php /* This isn't used yet. See controllers/sidebar-security_controller.php instead */ ?>
