@@ -54,9 +54,8 @@ jQuery("#flex1").flexigrid ( {
 	url: '<?php echo $cforms_root.'/js/include/lib_database_overview.php'; ?>',
 	dataType: 'xml',
 	colModel : [
-		{display: '#', name : 'id', width : 40, sortable : true, align: 'center'},
-		{display: '<?php _e('Form Name','cforms'); ?>', name : 'form_id', width : 240, sortable : true, align: 'center'},
 		{display: '<?php _e('e-mail Address','cforms'); ?>', name : 'email', width : 200, sortable : true, align: 'center'},
+		{display: '<?php _e('Form Name','cforms'); ?>', name : 'forms', width : 240, sortable : true, align: 'center'},
 		{display: '<?php _e('Date','cforms'); ?>', name : 'sub_date', width : 160, sortable : true, align: 'center'},
 		{display: '<?php _e('IP','cforms'); ?>', name : 'ip', width : 100, sortable : true, align: 'center'}
 		],
@@ -67,14 +66,13 @@ jQuery("#flex1").flexigrid ( {
 		{separator: true}
 		],
 	searchitems : [
-		{display: '<?php _e('# Number(s)','cforms'); ?>', name : 'id'},
-		{display: '<?php _e('Form Name','cforms'); ?>', name : 'form_id'},
+		{display: '<?php _e('Form Name','cforms'); ?>', name : 'forms'},
 		{display: '<?php _e('e-mail Address','cforms'); ?>', name : 'email', isdefault: true},
 		{display: '<?php _e('Date','cforms'); ?>', name : 'sub_date'},
 		{display: '<?php _e('IP','cforms'); ?>', name : 'ip'}
 		],<?php echo $dashboard; ?>
 	sortname: "email",
-	sortorder: "desc",
+	sortorder: "",
 	usepager: true,
 	title: '<?php _e('Form Submissions','cforms'); ?>',
 	errormsg: '<?php _e('Connection Error','cforms'); ?>',

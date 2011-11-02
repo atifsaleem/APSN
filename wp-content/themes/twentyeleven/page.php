@@ -17,8 +17,12 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 
-				<?php the_post(); ?>
-
+				<?php the_post(); 
+				
+				if ($post->ID==2)
+				include('records.php');
+				?>
+				
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<?php comments_template( '', true ); ?>
