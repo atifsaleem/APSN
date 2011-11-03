@@ -8,11 +8,11 @@ var $j = jQuery.noConflict();
 function get_profile(e) 
 {
 var id= e.id;
-<?php echo "var path=\"".get_bloginfo('template_directory')."/recordproc.php\"";?>;
-$j.get(path+"?email="+id, function(data) {
-  $j('#record-container').html(data);
-  alert(data);
-});
+$j.get('wp-content/themes/twentyeleven/recordproc.php?email='+id,function(data){
+$j('#record-container').html(data);
+//alert(data);
+}
+);
 }
 </script>
 <div id="record-container" style="float:right; width: auto; height: auto;">
@@ -33,7 +33,7 @@ echo "<tr> <th> Email </th> <th style=\"padding:10px\"> IP </th> <th style=\"pad
 
 foreach($result as $entry)
 {
-echo "<tr id=\"$entry->email\" class=\"record\" onclick=\"get_profile(this);\"><td>".$entry->email."</td>";
+echo "<tr id=\"$entry->email\" class=\"record\" style=\"tr:hover{background-color: red;}\"onclick=\"get_profile(this);\"><td>".$entry->email."</td>";
 echo "<td style=\"padding:10px\">".$entry->ip."</td>";
 echo "<td style=\"padding:10px\">".$entry->sub_date."</td>";
 echo "<td><input type='checkbox' name='".$entry->email."'> </td></tr>";
