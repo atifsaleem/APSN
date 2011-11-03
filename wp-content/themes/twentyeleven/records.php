@@ -14,9 +14,43 @@ $j('#record-container').html(data);
 }
 );
 }
+
+function approve(e)
+{
+var id=e.id;
+/* $j.get("recordapprove.php?fieldname=email&fieldvalue="+id,function(data)
+{
+alert(data);
+}
+);
+var rows=$j("tr.single");
+rows.each(
+function()
+{
+var cells=$j(this).children("td");
+var i=0;
+var field_name;
+var field_value;
+cells.each
+( function(){
+if (i%2==0)
+field_name=$j(this).html();
+else
+field_value=$j(this).html();
+}
+)
+}
+);*/
+$j.get("wp-content/themes/twentyeleven/recordapprove.php?email="+id, function(data)
+{
+alert(data);
+}
+);
+}
 </script>
 <div id="record-container" style="float:right; width: auto; height: auto;">
 </div>
+<div id="log"></div>
 <?php 
 
 global $wpdb;
