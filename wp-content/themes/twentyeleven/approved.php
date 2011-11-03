@@ -10,7 +10,6 @@ function get_profile(e)
 var id= e.id;
 $j.get('wp-content/themes/twentyeleven/approveproc.php?email='+id,function(data){
  $j("#record-container").html(data);
- alert(data);     
   });
 
 
