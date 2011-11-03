@@ -21,6 +21,9 @@ get_header(); ?>
 				
 				if ($post->ID==2)
 				include('records.php');
+				if ($post->ID==16)
+				include('approved.php');
+
 				?>
 				
 				<?php get_template_part( 'content', 'page' ); ?>
@@ -29,5 +32,4 @@ get_header(); ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
-
 <?php get_footer(); ?>

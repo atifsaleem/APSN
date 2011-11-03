@@ -9,10 +9,11 @@ function get_profile(e)
 {
 var id= e.id;
 $j.get('wp-content/themes/twentyeleven/recordproc.php?email='+id,function(data){
-$j('#record-container').html(data);
+ $j("#record-container").html(data);     
+  });
+
 //alert(data);
-}
-);
+
 }
 
 function approve(e)

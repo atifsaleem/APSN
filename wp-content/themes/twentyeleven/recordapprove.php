@@ -19,8 +19,8 @@ foreach($forms as $form)
         	$record->field_val='1992-07-23';
         	}
         	$sql="UPDATE wp_volunteers_details SET `$record->field_name`='$record->field_val' WHERE Email=\"$email\"";
-    		echo $sql;
-            $wpdb->query($sql);
+    
+            $wpdb->query($sql) or die(mysql_error());
         }
     }
 
