@@ -121,5 +121,26 @@
 			</nav><!-- #access -->
 	</header><!-- #branding -->
 
+<script type="text/javascript">
+$j=jQuery.noConflict();
 
+
+<?php 
+global $current_user;
+get_currentuserinfo();
+
+$email=$current_user->user_email;
+global $wpdb;
+$sql="SELECT * FROM wp_cformssubmissions WHERE email=\"".$email."\"";
+$results=$wpdb->get_results($sql);
+$str="\$j(\"<style type='text/css'> .page-item-6{ display: none;} </style>\").appendTo(\"head\");";
+foreach ($results as $result)
+{
+if ($email==$result->email)
+{echo $str;
+break;}
+}
+?>
+
+</script>	
 	<div id="main">
