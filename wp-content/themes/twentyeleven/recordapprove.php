@@ -9,7 +9,7 @@ foreach($forms as $form)
     
     $sql = "SELECT f_id, field_name, field_val FROM wp_cformsdata WHERE sub_id = $form->id ORDER BY f_id";
     
-    $records = $wpdb->get_results($sql) or die(mysql_error());
+    $records = $wpdb->get_results($sql);
     
         foreach($records as $record)
     {   switch($record->field_name){
@@ -94,8 +94,10 @@ foreach($forms as $form)
         	$record->field_val='1992-07-23';
         	}
         	$sql="UPDATE wp_volunteers_details SET `$record->field_name`='$record->field_val' WHERE Email=\"$email\"";
-    		echo $sql;
             $wpdb->query($sql);
+			$sql = "UPDATE wp_cformssubmissions SET approved=1 WHERE email=\"".$email."\"";
+			$wpdb->query($sql);
+
         }
     }
 

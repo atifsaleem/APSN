@@ -32,7 +32,6 @@ $var.= "</table>";
     //. "WHERE email = $email'";
 
 $forms = $wpdb->get_results("SELECT * FROM wp_cformssubmissions WHERE email = \"".$email."\"") or die(mysql_error());
-$var .= "<table>";
 $Title = array("1" => "Dr.", "2" => "Mr.", "3" => "Mdm","4"=>"Mrs.","5"=>"Ms.");
 $Sex = array("1" => "Male", "2" => "Female");
 $SgPR = array("1" => "Yes", "0" => "No");
@@ -42,7 +41,9 @@ $HigherEdu = array("1" => "Primary", "2" => "Secondary", "3" => "GCE 'N'/'O'", "
 $Dwelling = array("1"=>"HDB Room","2"=>"HD Executive","3"=>"HUDC","4"=>"Semi-detached/Terrace","5"=>"Condominium/Private Appt");
 $PrevVolunExp = array("1" => "Yes", "0" => "No");
 $Availability = array("1" => "Once Weekly", "2" => "Twice Weekly", "3" => "More than Twice Weekly");
-$var.="<button id=\"".$email."\" onClick=\"approve(this);\">Approve</button>";
+$var.="<center><button id=\"".$email."\" style=\"margin-bottom:30px;\" onClick=\"approve(this);\">Approve</button></center>";
+$var.="<button onClick=\"close(this);\">x</button>";
+$i=0;
 foreach($forms as $form)
 {
     
@@ -51,10 +52,15 @@ foreach($forms as $form)
     $records = $wpdb->get_results($sql) or die(mysql_error());
     $var=$var."<table>";
     foreach($records as $record)
-    {
+    {   if (i%2==0)
         if(substr($record->field_name, 0, 8)!='Fieldset' && $record->field_name != 'page'){
             $var=$var."<tr class=\"single\"><td>$record->field_name</td><td>$record->field_val</td></tr>";
         }
+        else
+                if(substr($record->field_name, 0, 8)!='Fieldset' && $record->field_name != 'page'){
+            $var=$var."<tr class=\"single alt\"><td>$record->field_name</td><td>$record->field_val</td></tr>";
+        }
+		$i=$i+1;
     }
     $var=$var."</";
      

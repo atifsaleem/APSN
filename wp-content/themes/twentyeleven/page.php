@@ -19,17 +19,21 @@ get_header(); ?>
 
 				<?php the_post(); 
 				
+				?>
+				
+				<?php get_template_part( 'content', 'page' ); 
 				if ($post->ID==2)
 				include('records.php');
 				if ($post->ID==16)
 				include('approved.php');
-
+				?>
+				<?php if ($post->ID==22)
+				include('appstatus.php');
+				?>
+				<?php if ($post->ID==20)
+				include('profile.php');
 				?>
 				
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php comments_template( '', true ); ?>
-
 			</div><!-- #content -->
 		</div><!-- #primary -->
 <?php get_footer(); ?>

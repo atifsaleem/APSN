@@ -23,8 +23,8 @@ function show_array($array, $level, $sub){
                $offset = do_offset($level);
            }
            $sub = 0;
-           echo $offset . "<td main ".$sub." width=\"120\">" . $key_val . 
-               "</td><td width=\"120\">" . $value . "</td>"; 
+           echo $offset . "<td main ".$sub." width=auto>" . $key_val . 
+               "</td><td width=auto>" . $value . "</td>"; 
            echo "</tr>\n";
            }
        } //foreach $array
@@ -35,7 +35,7 @@ function show_array($array, $level, $sub){
 }
 
 function html_show_array($array){
-  echo "<table cellspacing=\"0\" border=\"2\">\n";
+  echo "<table border=\"2\">\n";
   show_array($array, 1, 0);
   echo "</table>\n";
 }

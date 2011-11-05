@@ -15,14 +15,13 @@ $j.get('wp-content/themes/twentyeleven/approveproc.php?email='+id,function(data)
 
 }
 </script>
-<div id="record-container" style="float:right; width: auto; height: auto;">
-</div>
-
 <?php
 $sql = "SELECT Email, `First Name`, `Last Name` FROM wp_volunteers_details ORDER BY `Last Name`";
 
 $result = $wpdb->get_results($sql) or die(mysql_error());
-echo "<table>";
+$var.="<center><button style=\"margin-bottom:30px;\" onclick=\"close();\">x</button></center>";
+
+echo "<table id=\"approved-table\">";
 echo "<tr> <th> Email </th> <th style=\"padding:10px\"> First name </th> <th style=\"padding:10px\"> Last Name</th> </tr>";
 
 foreach($result as $entry)
@@ -36,3 +35,6 @@ echo "</table>";
 
 
 ?>
+<div id="record-container" style="margin: 0 auto; width: auto; height: auto;">
+</div>
+
