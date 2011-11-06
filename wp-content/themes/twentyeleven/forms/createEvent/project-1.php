@@ -7,7 +7,10 @@ $j=jQuery.noConflict();
 
 if ($j("#yes:selected"))
 {
-$j("#repeat-container").load("repeat.html");
+<?php   $path=get_bloginfo('template_directory')."/forms/createEvent/repeat.php"
+echo "var path=$path;"
+?>
+$j("#repeat-container").load(path);
 }
 
 }

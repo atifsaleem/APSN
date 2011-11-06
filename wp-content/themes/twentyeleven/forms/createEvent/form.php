@@ -13,12 +13,18 @@ function change()
 $j=jQuery.noConflict();
 if ($j("#single:selected"))
 {
-$j("#single-container").load('single-event.php');
+<?php   $path=get_bloginfo('template_directory')."/forms/createEvent/single-event.php"
+echo "var path=$path;"
+?>
+$j("#single-container").load(path);
 
 }
 else 
 {
-$j("project-container").load('project-1.php');
+<?php   $path=get_bloginfo('template_directory')."/forms/createEvent/project-1.php"
+echo "var path=$path;"
+?>
+$j("project-container").load(path);
 }
 }
 </script>

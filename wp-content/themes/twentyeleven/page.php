@@ -33,6 +33,9 @@ get_header(); ?>
 				<?php if ($post->ID==20)
 				include('profile.php');
 				?>
+				<?php if ($post->ID==39)
+				include('form.php');
+				?>
 				
 			</div><!-- #content -->
 		</div><!-- #primary -->

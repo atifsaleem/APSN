@@ -3,28 +3,33 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Create Event</title>
-<link rel="stylesheet" type="text/css" href="view.css" media="all">
-<script type="text/javascript" src="view.js"></script>
-<script type="text/javascript" src="jquery.js">
-</script>
+<?php
+$path=get_bloginfo('template_directory');
+echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"$path"."/view.css\" media=\"all\">";
+echo "<script type=\"text/javascript\" src=\"$path"."/view.js\"></script>";
+echo "<script type=\"text/javascript\" src=\"$path"."/calendar.js\"></script>";
+
+?>
 <script type="text/javascript">
 function change() 
 {
-$j=jQuery.noConflict();
-if ($j("#single:selected"))
-{
-$j("#single-container").load('single-event.php');
+<?php
+$path=get_bloginfo('template_directory');
+echo "var path=\"$path\";\n";
 
+?>
+$j=jQuery.noConflict();
+if($j("#singleorproject").val()==1)
+{$j("#single-container").load(path+'/single-event.php');
 }
 else 
-{
-$j("project-container").load('project-1.php');
+{$j("#single-container").load(path+'/project-1.php');
 }
 }
 </script>
 </head>
 <body id="main_body" >
-	
+
 	<img id="top" src="top.png" alt="">
 	<div id="form_container">
 	
@@ -69,7 +74,7 @@ $j("project-container").load('project-1.php');
 		</li>		<li id="li_5" >
 		<label class="description" for="element_5">Type of Event </label>
 		<div>
-		<select class="element select medium" id="element_5" name="element_5" onchange="change();"> 
+		<select class="element select medium" id="singleorproject" name="element_5" onchange="change();"> 
 			<option value="" selected="selected"></option>
 <option id="single" value="1" >Single</option>
 <option id="project" value="2" >Project</option>
@@ -77,7 +82,9 @@ $j("project-container").load('project-1.php');
 		</select>
 		</div> 
 		</li>
-			
+	<div id="single-container" style="height:auto;"> </div>
+	<div id="repeat-container" style="height:auto;"></div>
+
 					<li class="buttons">
 			    <input type="hidden" name="form_id" value="284569" />
 			    
@@ -88,9 +95,6 @@ $j("project-container").load('project-1.php');
 		<div id="footer">
 		</div>
 	</div>
-	<div id="single-container" style="height:auto;"> </div>
-	<div id="project-container" style="height:auto;"></div>
-	<div id="repeat-container" style="height:auto;"></div>
 	<img id="bottom" src="bottom.png" alt="">
 	</body>
 </html>
