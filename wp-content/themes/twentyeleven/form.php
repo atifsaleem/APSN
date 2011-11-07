@@ -20,14 +20,118 @@ $j=jQuery.noConflict();
 if($j("#singleorproject").val()==1)
 {
 $j("#project-container").css('display','none');
+$j("#sessions").css('display','none');
+$j("#repeat-container").css('display','none');
+$j(".repeat-days").css("display","none");
+$j(".repeat-weeks").css("display","none");
+$j(".month-repeat").css("display","none");
 $j("#single-container").css('display','inline');
 }
 else 
 {
 $j("#single-container").css('display','none');
 $j("#project-container").css('display','inline');
+}
+}
+</script>
+
+
+<script type="text/javascript">
+function generateSessions()
+
+{
+<?php
+$path=get_bloginfo('template_directory');
+echo "var path=\"$path\";\n";
+?>
+
+$j=jQuery.noConflict();
+if ($j("#singleorproject").val()==1)
+{
+
+var mm=$j("#element_6_1").val();
+var dd=$j("#element_6_2").val();
+var yy=$j("#element_6_3").val();
+var sthh=$j("#element_7_1").val();
+var stmm=$j("#element_7_2").val();
+var stss=$j("#element_7_3").val();
+var stam=$j("#element_7_4").val();
+var enhh=$j("#element_8_1").val();
+var enmm=$j("#element_8_2").val();
+var enss=$j("#element_8_3").val();
+var enam=$j("#element_8_4").val();
+var details=new Object();
+details= {month: mm,
+day: dd,
+year: yy,
+sthour: sthh,
+stmin: stmm,
+stsec: stss,
+sttim: stam,
+enhour: enhh,
+enmin: enmm,
+ensec: enss,
+entim: enam};
+$j.post(path+"/event-single.php", details, function(data)
+{$j("#sessions").css('display','inline');
+$j("#sessions").html(data);}
+);
+}
+
+if ($j("#singleorproject").val()==1)
+{
+
+var mm=$j("#element_11_1").val();
+var dd=$j("#element_11_2").val();
+var yy=$j("#element_11_3").val();
+var sthh=$j("#element_12_1").val();
+var stmm=$j("#element_12_2").val();
+var stss=$j("#element_12_3").val();
+var stam=$j("#element_12_4").val();
+var enhh=$j("#element_17_1").val();
+var enmm=$j("#element_17_2").val();
+var enss=$j("#element_17_3").val();
+var enam=$j("#element_17_4").val();
+var mm=$j("#element_11_1").val();
+var dd=$j("#element_11_2").val();
+var yy=$j("#element_11_3").val();
+var enmm=$j("#element_11_1").val();
+var endd=$j("#element_11_2").val();
+var enyy=$j("#element_11_3").val();
+
+var details=new Object();
+details= {month: mm,
+day: dd,
+year: yy,
+sthour: sthh,
+stmin: stmm,
+stsec: stss,
+sttim: stam,
+enhour: enhh,
+enmin: enmm,
+ensec: enss,
+entim: enam,
+enmonth: enmm,
+enday: endd,
+enyear: enyy};
+$j.post(path+"/recursive-project.php", details, function(data)
+{$j("#sessions").css('display','inline');
+$j("#sessions").html(data);}
+);
+}
+
+if ($j("#recursive").val()==2)
+{
+var numSessions= $j("#element_9").val();
+
+var session;
+$j.get(path+"/non-recursive-project.php?numSessions="+numSessions,function(data){
+$j("#sessions").css('display','inline');
+$j("#sessions").html(data);
+});
 
 }
+
 }
 </script>
 
@@ -175,10 +279,13 @@ if ($j("#recursive").val()==1)
 $path=get_bloginfo('template_directory');
 echo "var path=\"$path"."/repeat.php\"\n";
 ?>
+$j("#sessions").css('display','none');
 $j("#repeat-container").css('display','inline');
 }
 else
+{$j("#sessions").css('display','none');
 $j("#repeat-container").css('display','none');
+}
 }
 </script>
 
@@ -260,7 +367,7 @@ $j(".month-repeat").css("display","inline");
 		</script>
 		 
 		</li>		<li id="li_12" >
-		<label class="description" for="element_12">Time </label>
+		<label class="description" for="element_12">Start Time </label>
 		<span>
 			<input id="element_12_1" name="element_12_1" class="element text " size="2" type="text" maxlength="2" value=""/> : 
 			<label>HH</label>
@@ -280,7 +387,30 @@ $j(".month-repeat").css("display","inline");
 			</select>
 			<label>AM/PM</label>
 		</span> 
-		</li>		<li id="li_13" >
+		</li>
+		<li id="li_17" >
+		<label class="description" for="element_17">End Time </label>
+		<span>
+			<input id="element_17_1" name="element_17_1" class="element text " size="2" type="text" maxlength="2" value=""/> : 
+			<label>HH</label>
+		</span>
+		<span>
+			<input id="element_17_2" name="element_17_2" class="element text " size="2" type="text" maxlength="2" value=""/> : 
+			<label>MM</label>
+		</span>
+		<span>
+			<input id="element_17_3" name="element_17_3" class="element text " size="2" type="text" maxlength="2" value=""/>
+			<label>SS</label>
+		</span>
+		<span>
+			<select class="element select" style="width:4em" id="element_17_4" name="element_17_4">
+				<option value="AM" >AM</option>
+				<option value="PM" >PM</option>
+			</select>
+			<label>AM/PM</label>
+		</span> 
+		</li>
+				<li id="li_13" >
 		<label class="description" for="element_13">End Repeat </label>
 		<span>
 			<input id="element_13_1" name="element_13_1" class="element text" size="2" maxlength="2" value="" type="text"> /
@@ -367,11 +497,12 @@ $j(".month-repeat").css("display","inline");
 		 
 		</li>
 	</div>
-
+	<div id="sessions"></div>
 					<li class="buttons">
 			    <input type="hidden" name="form_id" value="284569" />
 			    
-				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+	<!--			<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" /> !-->
+	<p id="generate-sessions" style="background:black ; color: white; width: 50px; cursor: pointer;" onclick="generateSessions();">Submit!</p>
 		</li>
 			</ul>
 		
