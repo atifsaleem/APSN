@@ -25,12 +25,12 @@ $j("#repeat-container").css('display','none');
 $j(".repeat-days").css("display","none");
 $j(".repeat-weeks").css("display","none");
 $j(".month-repeat").css("display","none");
-$j("#single-container").css('display','inline');
+$j("#single-container").css('display','block');
 }
 else 
 {
 $j("#single-container").css('display','none');
-$j("#project-container").css('display','inline');
+$j("#project-container").css('display','block');
 }
 }
 </script>
@@ -73,12 +73,12 @@ enmin: enmm,
 ensec: enss,
 entim: enam};
 $j.post(path+"/event-single.php", details, function(data)
-{$j("#sessions").css('display','inline');
+{$j("#sessions").css('display','block');
 $j("#sessions").html(data);}
 );
 }
 
-if ($j("#singleorproject").val()==1)
+if ($j("#recursive").val()==1)
 {
 
 var mm=$j("#element_11_1").val();
@@ -92,13 +92,12 @@ var enhh=$j("#element_17_1").val();
 var enmm=$j("#element_17_2").val();
 var enss=$j("#element_17_3").val();
 var enam=$j("#element_17_4").val();
-var mm=$j("#element_11_1").val();
-var dd=$j("#element_11_2").val();
-var yy=$j("#element_11_3").val();
-var enmm=$j("#element_11_1").val();
-var endd=$j("#element_11_2").val();
-var enyy=$j("#element_11_3").val();
+var enmm=$j("#element_13_1").val();
+var endd=$j("#element_13_2").val();
+var enyy=$j("#element_13_3").val();
 
+var recurrence=$j("#howoften").val();
+var month_rep=$j("#element_16_1").val();
 var details=new Object();
 details= {month: mm,
 day: dd,
@@ -113,9 +112,23 @@ ensec: enss,
 entim: enam,
 enmonth: enmm,
 enday: endd,
-enyear: enyy};
+enyear: enyy,
+howoften: recurrence,
+days: "",
+weeks: "",
+months: month_rep};
+for (var i=1;i<=7;i++)
+{
+if ($j("#element_14_"+i).is(":checked"))
+details.days=details.days+i+"-";
+}
+for (var i=1;i<=6;i++)
+{
+if ($j("#element_15_"+i).is(":checked"))
+details.weeks=details.weeks+i+"-";
+}
 $j.post(path+"/recursive-project.php", details, function(data)
-{$j("#sessions").css('display','inline');
+{$j("#sessions").css('display','block');
 $j("#sessions").html(data);}
 );
 }
@@ -126,8 +139,9 @@ var numSessions= $j("#element_9").val();
 
 var session;
 $j.get(path+"/non-recursive-project.php?numSessions="+numSessions,function(data){
-$j("#sessions").css('display','inline');
+$j("#sessions").css('display','block');
 $j("#sessions").html(data);
+
 });
 
 }
@@ -280,11 +294,13 @@ $path=get_bloginfo('template_directory');
 echo "var path=\"$path"."/repeat.php\"\n";
 ?>
 $j("#sessions").css('display','none');
-$j("#repeat-container").css('display','inline');
+$j("#li_10").css('display','none');
+$j("#repeat-container").css('display','block');
 }
 else
 {$j("#sessions").css('display','none');
 $j("#repeat-container").css('display','none');
+$j("#li_10").css('display','block');
 }
 }
 </script>
@@ -299,41 +315,41 @@ $j("#repeat-container").css('display','none');
 
 		</select>
 		</div> 
-		</li>		<li id="li_9" >
-		<label class="description" for="element_9">No. of Sessions </label>
+		</li>		<li id="li_10" >
+		<label class="description" for="element_10">No. of Sessions </label>
 		<div>
-			<input id="element_9" name="element_9" class="element text medium" type="text" maxlength="255" value=""/> 
+			<input id="element_10" name="element_10" class="element text medium" type="text" maxlength="255" value=""/> 
 		</div> 
 		</li>
 
 	 </div>
-	<div id="repeat-container" style="height:auto; display: none;">
+	<div id="repeat-container" style="display: none;">
 	<script type="text/javascript">
 function changeRecurrence()
 {
 if ($j("#howoften").val()==2)
 {
 $j(".month-repeat").css("display","none");
-$j(".repeat-days").css("display","inline");
-$j(".repeat-weeks").css("display","inline");
+$j(".repeat-days").css("display","block");
+$j(".repeat-weeks").css("display","block");
 
 }
 else if ($j("#howoften").val()==3)
 {
 $j(".repeat-days").css("display","none");
 $j(".repeat-weeks").css("display","none");
-$j(".month-repeat").css("display","inline");
+$j(".month-repeat").css("display","block");
 }
 }
 </script>
-						<li id="li_5" >
-		<label class="description" for="element_10">How Often? </label>
+						<li id="li_18" >
+		<label class="description" for="element_18">How Often? </label>
 		<div>
-		<select class="element select medium" id="howoften" name="element_10" onchange="changeRecurrence();"> 
+		<select class="element select medium" id="howoften" name="element_18" onchange="changeRecurrence();"> 
 			<option value="" selected="selected"></option>
-<option value="1" id="daily" >Daily</option>
-<option value="2" id="weekly">Weekly</option>
-<option value="3" id="monthly">Monthly</option>
+<option value=1 id="daily" >Daily</option>
+<option value=2 id="weekly">Weekly</option>
+<option value=3 id="monthly">Monthly</option>
 
 		</select>
 		</div> 
@@ -439,7 +455,7 @@ $j(".month-repeat").css("display","inline");
 			});
 		</script>
 		 
-		</li>		<li id="li_14" class="repeat-days" style="display:none;">
+		</li>		<li id="li_14" class="repeat-days" style="display:none; z-index: 20;">
 		<label class="description" for="element_14">Repeat Days </label>
 		<span>
 			<input id="element_14_1" name="element_14_1" class="element checkbox" type="checkbox" value="1" />
@@ -458,7 +474,7 @@ $j(".month-repeat").css("display","inline");
 <label class="choice" for="element_14_7">Friday</label>
 
 		</span> 
-		</li>		<li id="li_15" class="repeat-weeks" style="display:none;">
+		</li>		<li id="li_15" class="repeat-weeks" style="display:none; z-index: 20;">
 		<label class="description" for="element_15">Weeks to repeat </label>
 		<span>
 			<input id="element_15_1" name="element_15_1" class="element checkbox" type="checkbox" value="1" />
@@ -466,13 +482,13 @@ $j(".month-repeat").css("display","inline");
 <input id="element_15_2" name="element_15_2" class="element checkbox" type="checkbox" value="1" />
 <label class="choice" for="element_15_2">Second</label>
 <input id="element_15_3" name="element_15_3" class="element checkbox" type="checkbox" value="1" />
-<label class="choice" for="element_7_3">Third</label>
+<label class="choice" for="element_15_3">Third</label>
 <input id="element_15_4" name="element_15_4" class="element checkbox" type="checkbox" value="1" />
-<label class="choice" for="element_7_4">Fourth</label>
+<label class="choice" for="element_15_4">Fourth</label>
 <input id="element_15_5" name="element_15_5" class="element checkbox" type="checkbox" value="1" />
-<label class="choice" for="element_7_5">Last</label>
+<label class="choice" for="element_15_5">Last</label>
 <input id="element_15_6" name="element_15_6" class="element checkbox" type="checkbox" value="1" />
-<label class="choice" for="element_7_6">All</label>
+<label class="choice" for="element_15s_6">All</label>
 
 		</span> 
 		</li>		<li id="li_16" class="month-repeat" style="display:none;">

@@ -88,7 +88,7 @@ echo <<<ELEMENT
 		</span>
 		<span>
 			<select class="element select" style="width:4em" id="element-2-4" name="element-2-4">
-				$sttim;			</select>
+				$sttim			</select>
 			<label>AM/PM</label>
 		</span> 
 		</li>
@@ -108,7 +108,7 @@ echo <<<ELEMENT
 		</span>
 		<span>
 			<select class="element select" style="width:4em" id="element-3-4" name="element-3-4">
-			$entim;
+			$entim
 			</select>
 			<label>AM/PM</label>
 		</span> 
