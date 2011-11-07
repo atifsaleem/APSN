@@ -7,7 +7,7 @@ $i=$i+1;
 return $i;
 }
 function get_session($timestamp_session,$i)
-{
+{ 
 $date=date('m d Y g i s a',$timestamp_session);
 $date=explode(" ",$date);
 if ($date[6]=="AM")
@@ -138,6 +138,9 @@ $endcompare="$enmonth/$enday/$enyear";
 $timestamp_beginning=strtotime($start_date);
 $timestamp_end=strtotime($end_date);
 $session_date=$timestamp_beginning;
+$i=1;
+$str=get_session($session_date,$i);
+echo $str;
 $all=0;
 foreach($repeat_weeks as $repeat_week)
 		{if (intval($repeat_week)==6)
@@ -146,6 +149,7 @@ foreach($repeat_weeks as $repeat_week)
 
 $condition=0;
 $present=0;
+
 if ($howoften==2)
 { 
 	while($session_date<$timestamp_end)
@@ -171,6 +175,34 @@ if ($howoften==2)
 				$present=0;
 			}
 		}
+
+}
+
+if ($howoften==1)
+{ 
+
+while($session_date<$timestamp_end)
+{ 
+$session_date=strtotime("+1 day",$session_date);
+$i=$i+1;
+$str=get_session($session_date,$i);
+echo $str;
+}
+
+}
+
+if ($howoften==3)
+{ 
+
+while($session_date<$timestamp_end)
+{ 
+$session_date=strtotime("+1 month",$session_date);
+$i=$i+1;
+if ($session_date<$timestamp_end)
+{$str=get_session($session_date,$i);
+echo $str;
+}
+}
 
 }
 

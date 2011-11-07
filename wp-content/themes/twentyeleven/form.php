@@ -329,16 +329,14 @@ function changeRecurrence()
 {
 if ($j("#howoften").val()==2)
 {
-$j(".month-repeat").css("display","none");
+$j("#sessions").html("");
 $j(".repeat-days").css("display","block");
 $j(".repeat-weeks").css("display","block");
-
 }
-else if ($j("#howoften").val()==3)
-{
+else 
+{$j("#sessions").html("");
 $j(".repeat-days").css("display","none");
 $j(".repeat-weeks").css("display","none");
-$j(".month-repeat").css("display","block");
 }
 }
 </script>
@@ -491,27 +489,7 @@ $j(".month-repeat").css("display","block");
 <label class="choice" for="element_15s_6">All</label>
 
 		</span> 
-		</li>		<li id="li_16" class="month-repeat" style="display:none;">
-		<label class="description" for="element_16">Day of the Month </label>
-		<span>
-			<input id="element_16_1" name="element_16_1" class="element text" size="2" maxlength="2" value="" type="text"> 
-			<label for="element_16_1">DD</label>
-		</span>
-		<span id="calendar_16">
-			<img id="cal_img_16" class="datepicker" src="images/calendar.gif" alt="Pick a date.">	
-		</span>
-		<script type="text/javascript">
-			Calendar.setup({
-			inputField	 : "element_16_1",
-			baseField    : "element_16",
-			displayArea  : "calendar_16",
-			button		 : "cal_img_16",
-			ifFormat	 : "%B %e, %Y",
-			onSelect	 : selectEuropeDate
-			});
-		</script>
-		 
-		</li>
+		</li>		
 	</div>
 	<div id="sessions"></div>
 					<li class="buttons">
