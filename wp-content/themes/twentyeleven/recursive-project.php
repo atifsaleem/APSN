@@ -8,17 +8,18 @@ return $i;
 }
 function get_session($timestamp_session,$session_end,$i)
 { 
-$date=date('m d Y g i s a',$timestamp_session);
-$date_end=date('g i s a', $session_end);
+$date=date('m d Y g i s A',$timestamp_session);
+$date_end=date('g i s A', $session_end);
 $date=explode(" ",$date);
 $date_end=explode(" ",$date_end);
-if ($date[6]=="AM")
+
+if ($date[6]=='AM')
 				{$sttim=<<<STTIM
 				<option value="AM" selected="selected">AM</option>
 				<option value="PM" >PM</option>
 STTIM;
 				}
-				else
+				else 
 				{
 				$sttim=<<<STTIM
 				<option value="AM">AM</option>
@@ -26,7 +27,7 @@ STTIM;
 STTIM;
 				}
 
-if ($date_end[4]=="AM")
+if ($date_end[3]=='AM')
 				{$entim=<<<ENTIM
 				<option value="AM" selected="selected">AM</option>
 				<option value="PM" >PM</option>
@@ -147,10 +148,9 @@ $howoften=$_POST['howoften'];
 $repeat_days=explode("-",$_POST['days']);
 $repeat_weeks=explode("-",$_POST['weeks']);
 $repeat_month=$_POST['months'];
-
-$start_date=$month."/".$day."/".$year." $sthour:$stmin:$stsec $sttim";
-$start_end_time=$month."/".$day."/".$year." $enhour:$enmin:$ensec $entim";
-$end_date=$enmonth."/".$enday."/".$enyear." $sthour:$stmin";
+$start_date=$month."/".$day."/".$year." $sthour:$stmin $sttim";
+$start_end_time=$month."/".$day."/".$year." $enhour:$enmin $entim";
+$end_date=$enmonth."/".$enday."/".$enyear." $sthour:$stmin $sttim";
 $endcompare="$enmonth/$enday/$enyear";
 $timestamp_beginning=strtotime($start_date);
 $timestamp_endtime=strtotime($start_end_time);

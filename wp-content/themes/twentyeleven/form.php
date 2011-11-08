@@ -88,14 +88,13 @@ var sthh=$j("#element_12_1").val();
 var stmm=$j("#element_12_2").val();
 var stss=$j("#element_12_3").val();
 var stam=$j("#element_12_4").val();
-var enhh=$j("#element_17_1").val();
-var enmm=$j("#element_17_2").val();
-var enss=$j("#element_17_3").val();
+var enh=$j("#element_17_1").val();
+var enm=$j("#element_17_2").val();
+var ens=$j("#element_17_3").val();
 var enam=$j("#element_17_4").val();
 var enmm=$j("#element_13_1").val();
 var endd=$j("#element_13_2").val();
 var enyy=$j("#element_13_3").val();
-
 var recurrence=$j("#howoften").val();
 var month_rep=$j("#element_16_1").val();
 var details=new Object();
@@ -106,9 +105,9 @@ sthour: sthh,
 stmin: stmm,
 stsec: stss,
 sttim: stam,
-enhour: enhh,
-enmin: enmm,
-ensec: enss,
+enhour: enh,
+enmin: enm,
+ensec: ens,
 entim: enam,
 enmonth: enmm,
 enday: endd,
