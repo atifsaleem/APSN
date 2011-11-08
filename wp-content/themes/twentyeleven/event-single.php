@@ -44,18 +44,18 @@ echo <<<ELEMENT
 			<h3>Session 1</h3>
 			<p></p>
 		</li>		<li id="li-1" >
-		<label class="description" for="element-1">Date </label>
+		<label class="description" for="session-1-1">Date </label>
 		<span>
-			<input id="element-1-1" name="element-1-1" class="element text" size="2" maxlength="2" value="$month" type="text"> /
-			<label for="element-1-1">MM</label>
+			<input id="session-1-1-1" name="session-1-1-1" class="element text" size="2" maxlength="2" value="$month" type="text"> /
+			<label for="session-1-1-1">MM</label>
 		</span>
 		<span>
-			<input id="element-1-2" name="element-1-2" class="element text" size="2" maxlength="2" value="$day" type="text"> /
-			<label for="element-1-2">DD</label>
+			<input id="session-1-1-2" name="session-1-1-2" class="element text" size="2" maxlength="2" value="$day" type="text"> /
+			<label for="session-1-1-2">DD</label>
 		</span>
 		<span>
-	 		<input id="element-1-3" name="element-1-3" class="element text" size="4" maxlength="4" value="$year" type="text">
-			<label for="element-1-3">YYYY</label>
+	 		<input id="session-1-1-3" name="session-1-1-3" class="element text" size="4" maxlength="4" value="$year" type="text">
+			<label for="session-1-1-3">YYYY</label>
 		</span>
 	
 		<span id="calendar-1">
@@ -63,8 +63,8 @@ echo <<<ELEMENT
 		</span>
 		<script type="text/javascript">
 			Calendar.setup({
-			inputField	 : "element-1-3",
-			baseField    : "element-1",
+			inputField	 : "session-1-1-3",
+			baseField    : "session-1-1",
 			displayArea  : "calendar-1",
 			button		 : "cal_img-1",
 			ifFormat	 : "%B %e, %Y",
@@ -73,41 +73,41 @@ echo <<<ELEMENT
 		</script>
 		 
 		</li>		<li id="li-2" >
-		<label class="description" for="element-1">Start Time </label>
+		<label class="description" for="session-1-1">Start Time </label>
 		<span>
-			<input id="element-2-1" name="element-2-1" class="element text " size="2" type="text" maxlength="2" value="$sthour"/> : 
+			<input id="session-1-2-1" name="session-1-2-1" class="element text " size="2" type="text" maxlength="2" value="$sthour"/> : 
 			<label>HH</label>
 		</span>
 		<span>
-			<input id="element-2-2" name="element-2-2" class="element text " size="2" type="text" maxlength="2" value="$stmin"/> : 
+			<input id="session-1-2-2" name="session-1-2-2" class="element text " size="2" type="text" maxlength="2" value="$stmin"/> : 
 			<label>MM</label>
 		</span>
 		<span>
-			<input id="element-2-3" name="element-2-3" class="element text " size="2" type="text" maxlength="2" value="$stsec"/>
+			<input id="session-1-2-3" name="session-1-2-3" class="element text " size="2" type="text" maxlength="2" value="$stsec"/>
 			<label>SS</label>
 		</span>
 		<span>
-			<select class="element select" style="width:4em" id="element-2-4" name="element-2-4">
+			<select class="element select" style="width:4em" id="session-1-2-4" name="session-1-2-4">
 				$sttim			</select>
 			<label>AM/PM</label>
 		</span> 
 		</li>
 		<li id="li-3" >
-		<label class="description" for="element-1">End Time </label>
+		<label class="description" for="session-1-1">End Time </label>
 		<span>
-			<input id="element-3-1" name="element-3-1" class="element text " size="2" type="text" maxlength="2" value="$enhour"/> : 
+			<input id="session-1-3-1" name="session-1-3-1" class="element text " size="2" type="text" maxlength="2" value="$enhour"/> : 
 			<label>HH</label>
 		</span>
 		<span>
-			<input id="element-3-2" name="element-3-2" class="element text " size="2" type="text" maxlength="2" value="$enmin"/> : 
+			<input id="session-1-3-2" name="session-1-3-2" class="element text " size="2" type="text" maxlength="2" value="$enmin"/> : 
 			<label>MM</label>
 		</span>
 		<span>
-			<input id="element-3-3" name="element-3-3" class="element text " size="2" type="text" maxlength="2" value="$ensec"/>
+			<input id="session-1-3-3" name="session-1-3-3" class="element text " size="2" type="text" maxlength="2" value="$ensec"/>
 			<label>SS</label>
 		</span>
 		<span>
-			<select class="element select" style="width:4em" id="element-3-4" name="element-3-4">
+			<select class="element select" style="width:4em" id="session-1-3-4" name="session-1-3-4">
 			$entim
 			</select>
 			<label>AM/PM</label>
@@ -117,5 +117,7 @@ echo <<<ELEMENT
 		</ul>	
 		<br>
 ELEMENT;
+
+echo "<input type=\"hidden\" name=\"numSessions\" id=\"numSessions\" value=1></input>";
 
 ?>

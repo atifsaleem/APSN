@@ -135,7 +135,7 @@ $j("#sessions").html(data);}
 
 if ($j("#recursive").val()==2)
 {
-var numSessions= $j("#element_9").val();
+var numSessions= $j("#element_10").val();
 
 var session;
 $j.get(path+"/non-recursive-project.php?numSessions="+numSessions,function(data){
@@ -146,6 +146,7 @@ $j("#sessions").html(data);
 
 }
 
+$j("#saveForm").css('display','inline');
 }
 </script>
 
@@ -154,7 +155,8 @@ $j("#sessions").html(data);
 	<div id="form_container">
 	
 		<h1><a>Create Event</a></h1>
-		<form id="form_284569" class="appnitro"  method="post" action="">
+		<form id="form_284569" class="appnitro"  method="post" action="<?php $path=get_bloginfo('template_directory');
+echo $path;?>/eventproc.php">
 					<div class="form_description">
 			<h2>Create Event</h2>
 			<p>Fill out the following details to create a new event</p>
@@ -191,7 +193,14 @@ $j("#sessions").html(data);
 <label class="choice" for="element_4_5">Centre for Adults</label>
 
 		</span><p class="guidelines" id="guide_4"><small>Select the Organizer</small></p> 
-		</li>		<li id="li_5" >
+		</li>
+							<li id="li_16" >
+		<label class="description" for="element_16">Number of Vacancies </label>
+		<div>
+			<input id="numVacancies" name="numVacancies" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div><p class="guidelines" id="guide_1"><small>Enter the maximum number of vacancies</small></p> 
+		</li>	
+				<li id="li_5" >
 		<label class="description" for="element_5">Type of Event </label>
 		<div>
 		<select class="element select medium" id="singleorproject" name="element_5" onchange="change();"> 
@@ -486,7 +495,7 @@ $j(".repeat-weeks").css("display","none");
 <input id="element_15_5" name="element_15_5" class="element checkbox" type="checkbox" value="1" />
 <label class="choice" for="element_15_5">Last</label>
 <input id="element_15_6" name="element_15_6" class="element checkbox" type="checkbox" value="1" />
-<label class="choice" for="element_15s_6">All</label>
+<label class="choice" for="element_15_6">All</label>
 
 		</span> 
 		</li>		
@@ -495,11 +504,11 @@ $j(".repeat-weeks").css("display","none");
 					<li class="buttons">
 			    <input type="hidden" name="form_id" value="284569" />
 			    
-	<!--			<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" /> !-->
-	<p id="generate-sessions" style="background:black ; color: white; width: 50px; cursor: pointer;" onclick="generateSessions();">Submit!</p>
+
+	<p id="generate-sessions" style="background:black ; color: white; width: 120px; cursor: pointer; margin:0 auto;" onclick="generateSessions();">Generate Sessions!</p>
 		</li>
 			</ul>
-		
+		<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" style="display:none;"/>
 		</form>	
 		<div id="footer">
 		</div>
