@@ -1,3 +1,14 @@
+<?php 
+wp_enqueue_script('jquery');
+wp_enqueue_script('dependencies',get_bloginfo('template_directory').'/dependencies.js',array('jquery')); 
+wp_enqueue_script('visualsearch', get_bloginfo('template_directory').'/visualsearch.js',array('jquery','dependencies'));
+wp_enqueue_style('visualsearch-style', get_bloginfo('template_directory').'/visualsearch-datauri.css', false, false, 'screen');
+wp_enqueue_style('visualsearch-style', get_bloginfo('template_directory').'/visualsearch.css', false, false, 'screen');
+wp_enqueue_script('dependencies',get_bloginfo('template_directory').'/js/overlay.js',array('jquery')); 
+
+?>
+
+
 <?php
 /**
  * The template for displaying all pages.

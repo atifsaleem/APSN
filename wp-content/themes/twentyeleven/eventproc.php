@@ -54,7 +54,6 @@ $end_time="";
 $date = substr($date, 0, -1);
 $timestamp=strtotime($date);
 $date=date('Y-m-d',$timestamp);
-echo $start_time."-".$end_time;
 if ($k==1)
 {
 
