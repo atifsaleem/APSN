@@ -30,7 +30,7 @@ $end_time="";
 			}
 		else if ($i==2 && $j<4)
 			{ if ($j==3)
-			 $start_time=$start_time.$_POST["session-$k-2-$j"];
+			 $start_time=$start_time.$_POST["session-$k-2-3"];
 			  else
  			$start_time=$start_time.$_POST["session-$k-2-$j"].":";
  			   }
@@ -40,13 +40,13 @@ $end_time="";
 			}
 	    else if ($i==3 && $j<4)
 			{ if ($j==3)
-			 $end_time=$end_time.$_POST["session-$k-2-$j"];
+			 $end_time=$end_time.$_POST["session-$k-3-$j"];
 			  else
- 			$end_time=$end_time.$_POST["session-$k-2-$j"].":";
+ 			$end_time=$end_time.$_POST["session-$k-3-$j"].":";
  			   }
 		else if ($i==3 && $j==4)
 			{
-			$end_time=$end_time." ".$_POST["session-$k-2-4"];
+			$end_time=$end_time." ".$_POST["session-$k-3-4"];
 			}
 		}
 		
@@ -54,6 +54,7 @@ $end_time="";
 $date = substr($date, 0, -1);
 $timestamp=strtotime($date);
 $date=date('Y-m-d',$timestamp);
+echo $start_time."-".$end_time;
 if ($k==1)
 {
 
