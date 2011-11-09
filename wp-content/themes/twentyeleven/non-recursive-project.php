@@ -61,23 +61,23 @@ echo <<<ELEMENT
 		</li>
 		</ul>	
 		<br>
-		<li id="li-session-$id-3">
+		<li id="li-session-$i-3">
 		<label class="description" for="session-$i-1">End Time </label>
 		<span>
-			<input id="session-$i-3-1" name="session-$i-3-1" class="element text " size="2" type="text" maxlength="2" value="$date_end[0]"/> : 
+			<input id="session-$i-3-1" name="session-$i-3-1" class="element text " size="2" type="text" maxlength="2" value=""/> : 
 			<label>HH</label>
 		</span>
 		<span>
-			<input id="session-$i-3-2" name="session-$i-3-2" class="element text " size="2" type="text" maxlength="2" value="$date_end[1]"/> : 
+			<input id="session-$i-3-2" name="session-$i-3-2" class="element text " size="2" type="text" maxlength="2" value=""/> : 
 			<label>MM</label>
 		</span>
 		<span>
-			<input id="session-$i-3-3" name="session-$i-3-3" class="element text " size="2" type="text" maxlength="2" value="$date_end[2]"/>
+			<input id="session-$i-3-3" name="session-$i-3-3" class="element text " size="2" type="text" maxlength="2" value=""/>
 			<label>SS</label>
 		</span>
 		<span>
 			<select class="element select" style="width:4em" id="session-$i-3-4" name="session-$i-3-4">
-			$entim
+			
 			</select>
 			<label>AM/PM</label>
 		</span> 

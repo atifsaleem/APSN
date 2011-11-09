@@ -14,7 +14,12 @@ border: none;
 <div id="search_box_container2">
 
 <script type="text/javascript">
-$j=jQuery.noConflict();
+
+var initial=0;
+<?php
+$path=get_bloginfo('template_directory');
+echo "var path=\"".$path."\";";
+?>
 $j(document).ready(function() {
         var visualSearch = VS.init({
           container  : $j('#search_box_container2'),
@@ -27,13 +32,15 @@ $j(document).ready(function() {
             'access'
           ],
           callbacks  : {
+
             search : function(query, searchCollection) {
-              console.log(["query", searchCollection.facets(), query]);
-              var $query = $j('#search_query2');
-             
+		      var ap=0;
+			  var dataString="{"+searchCollection.serialize()+"}";
+			  eval('var obj='+dataString);
+              $query=$j("search_box_container2");
               $j("#VS").html('<span class="raquo">&raquo;</span> You searched for: <b>' + searchCollection.serialize() + '</b>');
-              $j.post('search-applicants.php',searchCollection, function (data) {
-              $j()
+              $j.post(path+'/search-applicants.php',obj, function (data) {
+              $j('#table-container').html(data);
               });
               $query.stop().animate({opacity : 1}, {duration: 300, queue: false});
               $query.html('<span class="raquo">&raquo;</span> You searched for: <b>' + searchCollection.serialize() + '</b>');

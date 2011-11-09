@@ -129,7 +129,7 @@ VS.ui.SearchBox = Backbone.View.extend({
     if (inputViewsCount) {
       query.push(this.inputViews[inputViewsCount-1].value());
     }
-
+    
     return _.compact(query).join(' ');
   },
 
@@ -1717,7 +1717,7 @@ VS.model.SearchQuery = Backbone.Collection.extend({
 
   // Turns all of the facets into a single serialized string.
   serialize : function() {
-    return this.map(function(facet){ return facet.serialize(); }).join(' ');
+    return this.map(function(facet){ return facet.serialize(); }).join(',');
   },
   
   facets : function() {
