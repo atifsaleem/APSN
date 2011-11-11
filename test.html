@@ -1,0 +1,46 @@
+<head>
+    <style>
+        #displaybox {
+            z-index: 1;
+            filter: alpha(opacity=95); /*older IE*/
+            filter: progid:DXImageTransform.Microsoft.Alpha(opacity=95); /* IE */
+            -moz-opacity: .95; /*older Mozilla*/
+            -khtml-opacity: 0.95;   /*older Safari*/
+            opacity: 0.95;   /*supported by current Mozilla, Safari, and Opera*/
+            background-color:white;
+            position:absolute; top:0px; left:0px; width:100%; height:100%; color:#FFFFFF; text-align:center; vertical-align:middle;
+        }
+        div.content {
+            z-index: 4;
+            filter: alpha(opacity=95); /*older IE*/
+            filter: progid:DXImageTransform.Microsoft.Alpha(opacity=95); /* IE */
+            -moz-opacity: .95; /*older Mozilla*/
+            -khtml-opacity: 0.95;   /*older Safari*/
+            opacity: 0.95;   /*supported by current Mozilla, Safari, and Opera*/
+            background-color:#c8d3fe;
+            margin: 0 auto;
+            border-style: groove; border-radius: 10px; border-color: grey; border-width: medium;
+            position:absolute; top:0px; left:20%; right:20%; width:auto; height:90%; color:#FFFFFF; text-align:center; vertical-align:middle;
+        }
+    </style>
+    <script>
+        function clicker(){
+            
+            var thediv=document.getElementById('displaybox');
+            if(thediv.style.display == "none"){
+                thediv.style.display = "";
+                thediv.innerHTML = "<div class=\"content\" id=\"contentbox\" ><a href='#' onclick='return clicker();'>CLOSE WINDOW</a></div>";
+            }
+            else{
+                thediv.style.display = "none";
+                thediv.innerHTML = '';
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div id="displaybox" style="display: none;"></div>
+    <div id="contentbox" style="display: none;"></div>
+    <a href='#' onclick='return clicker();'>Open Window</a>
+</body>

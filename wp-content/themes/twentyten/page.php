@@ -8,25 +8,41 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Twenty_Eleven
+ * @since Twenty Eleven 1.0
  */
 
 get_header(); ?>
 
-		<div id="container">
+		<div id="primary">
 			<div id="content" role="main">
 
-			<?php
-			/* Run the loop to output the page.
-			 * If you want to overload this in a child theme then include a file
-			 * called loop-page.php and that will be used instead.
-			 */
-			get_template_part( 'loop', 'page' );
-			?>
-
+				<?php the_post(); 
+				
+				?>
+				
+				<?php get_template_part( 'content', 'page' ); 
+				if ($post->ID==2)
+				include('records.php');
+				if ($post->ID==16)
+				include('approved.php');
+				?>
+				<?php if ($post->ID==22)
+				include('appstatus.php');
+				?>
+                                <?php if ($post->ID==49)
+				include('events_mgt.php');
+				?>
+                                <?php if ($post->ID==43)
+				include('events.php');
+				?>
+                                <?php if ($post->ID==52)
+				include('event_options.php');
+				?>
+				<?php if ($post->ID==20)
+				include('profile.php');
+				?>
+				
 			</div><!-- #content -->
-		</div><!-- #container -->
-
-<?php get_sidebar(); ?>
+		</div><!-- #primary -->
 <?php get_footer(); ?>

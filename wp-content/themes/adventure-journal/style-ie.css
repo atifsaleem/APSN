@@ -1,0 +1,14 @@
+/*
+Lets face it, IE is the bane of web professionals everywhere... hence this stylesheet.
+*/
+.sidebar li.widget{
+	/*background: #EFE3D8;*/
+	background:#e9e9e8;
+	border:1px solid silver;
+}
+#nav-above, #nav-below { border:1px solid silver; }
+#menu.nav-horz{ position:relative; z-index:99;}
+#menu.nav-horz #menu-top li,
+#menu.nav-horz #menu-top li a { height:33px !important; }
+#header { position:relative; z-index:1; }
+.clear{ padding-top:1px; }

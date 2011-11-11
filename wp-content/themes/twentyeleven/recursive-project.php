@@ -97,7 +97,7 @@ $str= <<<ELEMENT
 			<label>AM/PM</label>
 		</span> 
 		</li>
-		<li id="li-session-$id-3">
+		<li id="li-session-$i-3">
 		<label class="description" for="session-$i-1">End Time </label>
 		<span>
 			<input id="session-$i-3-1" name="session-$i-3-1" class="element text " size="2" type="text" maxlength="2" value="$date_end[0]"/> : 
@@ -147,7 +147,7 @@ $enyear=$_POST['enyear'];
 $howoften=$_POST['howoften'];
 $repeat_days=explode("-",$_POST['days']);
 $repeat_weeks=explode("-",$_POST['weeks']);
-$repeat_month=$_POST['months'];
+//$repeat_month=$_POST['months'];
 $start_date=$month."/".$day."/".$year." $sthour:$stmin $sttim";
 $start_end_time=$month."/".$day."/".$year." $enhour:$enmin $entim";
 $end_date=$enmonth."/".$enday."/".$enyear." $sthour:$stmin $sttim";

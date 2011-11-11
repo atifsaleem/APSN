@@ -11,6 +11,7 @@ border: none;
 </div>
 <div id="search_box_container2">
 <script type="text/javascript">
+$j=jQuery.noConflict();
 <?php echo "var page_id=$post->ID;" ;?>
 function email(e)
 {
@@ -27,7 +28,7 @@ $j("#record-container").html("");
 }
 </script>
 <script type="text/javascript">
-
+$j=jQuery.noConflict();
 var initial=0;
 <?php
 $path=get_bloginfo('template_directory');
@@ -202,7 +203,9 @@ echo "<td style=\"padding:10px\">".$names['First Name']."</td>";
 echo "<td style=\"padding:10px\">".$names['Last Name']."</td></tr>";
 }
 echo "</table>";
-
+echo"<form action=\"wp-content/themes/twentyeleven/gen_report.php\" method=\"post\">";
+echo "<input type=\"hidden\" name=\"table\" value=\"wp_volunteers_details\"/>";
+echo "<center><input type=\"submit\" value=\"Export\"/></center>";
 
 ?>
 </div>

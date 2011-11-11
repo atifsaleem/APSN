@@ -1,14 +1,3 @@
-<?php 
-wp_enqueue_script('jquery');
-wp_enqueue_script('dependencies',get_bloginfo('template_directory').'/dependencies.js',array('jquery')); 
-wp_enqueue_script('visualsearch', get_bloginfo('template_directory').'/visualsearch.js',array('jquery','dependencies'));
-wp_enqueue_style('visualsearch-style', get_bloginfo('template_directory').'/visualsearch-datauri.css', false, false, 'screen');
-wp_enqueue_style('visualsearch-style', get_bloginfo('template_directory').'/visualsearch.css', false, false, 'screen');
-
-
-?>
-
-
 <?php
 /**
  * The template for displaying all pages.
@@ -22,8 +11,17 @@ wp_enqueue_style('visualsearch-style', get_bloginfo('template_directory').'/visu
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
+?>
+<?php 
+wp_enqueue_script('jquery');
+wp_enqueue_script('dependencies',get_bloginfo('template_directory').'/dependencies.js',array('jquery')); 
+wp_enqueue_script('visualsearch', get_bloginfo('template_directory').'/visualsearch.js',array('jquery','dependencies'));
+wp_enqueue_style('visualsearch-style', get_bloginfo('template_directory').'/visualsearch-datauri.css', false, false, 'screen');
+wp_enqueue_style('visualsearch-style', get_bloginfo('template_directory').'/visualsearch.css', false, false, 'screen');
 
-get_header(); ?>
+
+?>			
+<?php get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
@@ -38,18 +36,29 @@ get_header(); ?>
 				if ($post->ID==16)
 				include('approved.php');
 				?>
+                                <?php if ($post->ID==54)
+				include('form.php');
+				?>
 				<?php if ($post->ID==22)
 				include('appstatus.php');
+				?>
+                                <?php if ($post->ID==45)
+				include('events_mgt.php');
+				?>
+                                <?php if ($post->ID==43)
+				include('events.php');
+				?>
+                                <?php if ($post->ID==47)
+				include('event_options.php');
 				?>
 				<?php if ($post->ID==20)
 				include('profile.php');
 				?>
-				<?php if ($post->ID==46)
-				include('rejected.php');
+                                <?php if ($post->ID==56)
+				include('event_edit.php');
 				?>
-
-				<?php if ($post->ID==39)
-				include('form.php');
+                                <?php if ($post->ID==58)
+				include('rejected.php');
 				?>
 				
 			</div><!-- #content -->

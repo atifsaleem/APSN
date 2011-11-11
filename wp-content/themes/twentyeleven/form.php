@@ -135,12 +135,10 @@ $j("#sessions").html(data);}
 if ($j("#recursive").val()==2)
 {
 var numSessions= $j("#element_10").val();
-
-var session;
+$j("#sessions").html("");
 $j.get(path+"/non-recursive-project.php?numSessions="+numSessions,function(data){
 $j("#sessions").css('display','block');
 $j("#sessions").html(data);
-
 });
 
 }
@@ -154,8 +152,7 @@ $j("#saveForm").css('display','inline');
 	<div id="form_container">
 	
 		<h1><a>Create Event</a></h1>
-		<form id="form_284569" class="appnitro"  method="post" action="<?php $path=get_bloginfo('template_directory');
-echo $path;?>/eventproc.php">
+		<form id="form_284569" class="appnitro"  method="post" action="<?php $path=get_bloginfo('template_directory');echo $path;?>/event_proc.php">
 					<div class="form_description">
 			<h2>Create Event</h2>
 			<p>Fill out the following details to create a new event</p>
@@ -323,7 +320,8 @@ $j("#li_10").css('display','block');
 
 		</select>
 		</div> 
-		</li>		<li id="li_10" >
+		</li>		
+                <li id="li_10" >
 		<label class="description" for="element_10">No. of Sessions </label>
 		<div>
 			<input id="element_10" name="element_10" class="element text medium" type="text" maxlength="255" value=""/> 

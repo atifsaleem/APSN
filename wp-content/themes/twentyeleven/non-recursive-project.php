@@ -1,22 +1,23 @@
-<?php	
-$numSessions=$_GET['numSessions'];
-for ($i=1;$i<=$numSessions;$i=$i+1)
-{ 
-echo <<<ELEMENT
+<?php
+
+$numSessions = $_GET['numSessions'];
+for ($i = 1; $i <= $numSessions; $i = $i + 1) {
+    echo <<<ELEMENT
 <ul >
 			
-					<li class="section_break">
-			<h3>Session $i</h3>
-			<p></p>
-		</li>		<li id="li-$i-1" >
-		<label class="description" for="session-$i-1">Date </label>
-		<span>
-			<input id="session-$i-1-1" name="session-$i-1-1" class="element text" size="2" maxlength="2" value="" type="text"> /
-			<label for="session-$i-1-1">MM</label>
-		</span>
-		<span>
-			<input id="session-$i-1-2" name="session-$i-1-2" class="element text" size="2" maxlength="2" value="" type="text"> /
-			<label for="session-$i-1-2">DD</label>
+    <li class="section_break">
+        <h3>Session $i</h3>
+        <p></p>
+    </li>		
+    <li id="li-$i-1" >
+	<label class="description" for="session-$i-1">Date </label>
+	<span>
+            <input id="session-$i-1-1" name="session-$i-1-1" class="element text" size="2" maxlength="2" value="" type="text"> /
+                <label for="session-$i-1-1">MM</label>
+	</span>
+	<span>
+            <input id="session-$i-1-2" name="session-$i-1-2" class="element text" size="2" maxlength="2" value="" type="text"> /
+                <label for="session-$i-1-2">DD</label>
 		</span>
 		<span>
 	 		<input id="session-$i-1-3" name="session-$i-1-3" class="element text" size="4" maxlength="4" value="" type="text">
@@ -59,8 +60,6 @@ echo <<<ELEMENT
 			<label>AM/PM</label>
 		</span> 
 		</li>
-		</ul>	
-		<br>
 		<li id="li-session-$i-3">
 		<label class="description" for="session-$i-1">End Time </label>
 		<span>
@@ -82,9 +81,8 @@ echo <<<ELEMENT
 			<label>AM/PM</label>
 		</span> 
 		</li>
-
+		</ul>	
 ELEMENT;
 }
 echo "<input type=\"hidden\" name=\"numSessions\" id=\"numSessions\" value=$numSessions></input>";
-
 ?>

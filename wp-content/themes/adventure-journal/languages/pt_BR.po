@@ -1,0 +1,604 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Adventure Journal 1.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-20 11:47-0800\n"
+"PO-Revision-Date: 2011-08-01 18:15-0300\n"
+"Last-Translator: Fernando Falci <falci@falci.me>\n"
+"Language-Team: Contexture International <opensource@contextureintl.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;_x;__\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\republic\\wp-content\\themes\\adventure-journal\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: BRAZIL\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:13
+#: loop.php:35
+msgid "Not Found"
+msgstr "Página Não Encontrada"
+
+#: 404.php:15
+msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
+msgstr "Desculpas, mas a página solicitada não pôde ser encontrado. Talvez uma busca possa ajudar."
+
+#: archive.php:16
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Arquivos do dia: <span>%s</span>"
+
+#: archive.php:18
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Arquivos do mês: <span>%s</span>"
+
+#: archive.php:20
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Arquivos do ano: <span>%s</span>"
+
+#: archive.php:22
+msgid "Blog Archives"
+msgstr "Arquivos do blog"
+
+#: author.php:23
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Arquivos do autor: %s"
+
+#: author.php:31
+#, php-format
+msgid "About %s"
+msgstr "Sobre %s"
+
+#: comments-popup.php:9
+#, php-format
+msgid "Comments on %s"
+msgstr "Comentários em %s"
+
+#: comments-popup.php:29
+msgid "Comments"
+msgstr "Comentários"
+
+#: comments-popup.php:31
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr> feed for comments on this post."
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> para os comentários deste post."
+
+#: comments-popup.php:34
+msgid "The <abbr title=\"Universal Resource Locator\">URL</abbr> to TrackBack this entry is:"
+msgstr "A <abbr title=\"Universal Resource Locator\">URL</abbr> para TrackBack é:"
+
+#: comments-popup.php:52
+msgid "Comment"
+msgstr "Comentário"
+
+#: comments-popup.php:52
+msgid "Trackback"
+msgstr ""
+
+#: comments-popup.php:52
+msgid "Pingback"
+msgstr ""
+
+#: comments-popup.php:52
+msgid "by"
+msgstr "por"
+
+#: comments-popup.php:58
+msgid "No comments yet."
+msgstr "Nenhum comentário ainda."
+
+#: comments-popup.php:62
+#: loop.php:97
+#: loop.php:121
+#: loop.php:171
+msgid "Leave a comment"
+msgstr "Deixe um comentário"
+
+#: comments-popup.php:63
+msgid "Line and paragraph breaks automatic, e-mail address never displayed, <acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed:"
+msgstr "Linha e quebras de parágrafo automáticas, seu endereço de e-mail nunca será mostrado, <acronym title=\"Hypertext Markup Language\">HTML</ acronym> permitido:"
+
+#: comments-popup.php:67
+#, php-format
+msgid "Logged in as %s."
+msgstr "Logado como %s"
+
+#: comments-popup.php:67
+msgid "Log out of this account"
+msgstr "Sair desta conta"
+
+#: comments-popup.php:67
+msgid "Log out &raquo;"
+msgstr "Sair &raquo;"
+
+#: comments-popup.php:71
+msgid "Name"
+msgstr "Nome"
+
+#: comments-popup.php:76
+msgid "E-mail"
+msgstr "E-mail"
+
+#: comments-popup.php:81
+msgid "<abbr title=\"Universal Resource Locator\">URL</abbr>"
+msgstr ""
+
+#: comments-popup.php:86
+msgid "Your Comment"
+msgstr "Seu comentário"
+
+#: comments-popup.php:99
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Desculpe, mas os comentários foram desabilitados."
+
+#: comments-popup.php:104
+msgid "Close this window."
+msgstr "Fechar esta janela"
+
+#: comments-popup.php:115
+#, php-format
+msgid "<cite>Powered by <a href=\"http://wordpress.org\" title=\"%s\"><strong>WordPress</strong></a></cite>"
+msgstr ""
+
+#: comments-popup.php:115
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+
+#: comments.php:10
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Este post é protegido por senha. Informe a senha para ver todos os comentários."
+
+#: comments.php:28
+#: comments.php:47
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Comentários Antigos"
+
+#: comments.php:29
+#: comments.php:48
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Novos Comentários <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr "Comentários estão fechados."
+
+#: functions.php:124
+msgid "Primary Menu"
+msgstr "Menu Primário"
+
+#: functions.php:125
+msgid "Footer Menu"
+msgstr "Menu Rodapé"
+
+#: functions.php:181
+msgid "Egypt"
+msgstr "Egito"
+
+#: functions.php:187
+msgid "Cart"
+msgstr "Carrinho"
+
+#: functions.php:193
+msgid "Flower"
+msgstr "Flores"
+
+#: functions.php:199
+msgid "Hut"
+msgstr "Cabana"
+
+#: functions.php:281
+msgid "Continue reading <span class=\"meta-nav\">&raquo;</span>"
+msgstr "Continue lendo <span class=\"meta-nav\">&raquo;</span>"
+
+#: functions.php:407
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: functions.php:407
+#, php-format
+msgid "Powered by %s"
+msgstr ""
+
+#: functions.php:432
+msgid "Edit Comment"
+msgstr "Editar comentário"
+
+#: functions.php:435
+msgid "\t\t\t\t\t<span class='unapproved'>Your comment is awaiting moderation.</span>\n"
+msgstr "\t\t\t\t\t<span class='unapproved'>Seu comentário está aguardando moderação.</span>\n"
+
+#: functions.php:447
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:447
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#: functions.php:557
+msgid "Theme Options"
+msgstr "Opções do  Tema"
+
+#: functions.php:572
+#, php-format
+msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+msgstr "<span class=\"%1$s\">Postado em</span> %2$s <span class=\"meta-sep\">por</span> %3$s"
+
+#: functions.php:592
+msgid "<p>Adventure Journal supports different page layouts without any additional coding. Simply select the layout you want to use on your site and click Save Changes."
+msgstr "<p>Adventure Journal suporta diferentes paginas de layouts sem nenhum código adicional. Simplesmente selecione o layout que você deseja usar em seu site e clique em Salvar Alterações."
+
+#: header.php:24
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+#: header.php:54
+msgid "You are using an insecure version of <span id=\"bh-browsername\">your web browser</span>. Please update your browser!"
+msgstr "Você está usando uma versão insegura do <span id=\"bh-browsername\">seu navegador web</span>. Por favor atualize seu navegado!"
+
+#: header.php:55
+msgid "Using an outdated browser makes your computer unsafe. For a safer, faster, more enjoyable user experience, please update your browser today or try a newer browser."
+msgstr "Usando um navegador desatualizado torna seu computador inseguro. Para mais segurança, velocidade, uma experiência mais agradável, atualize o seu navegador hoje ou tente um novo navegador."
+
+#: header.php:57
+msgid "Update Your Browser"
+msgstr "Atualize Seu Navegador"
+
+#: header.php:57
+msgid "Try Something New"
+msgstr "Tente Algo Novo"
+
+#: header.php:57
+msgid "Hide This Warning"
+msgstr "Ocultar Este Aviso"
+
+#: loop.php:26
+#: loop.php:185
+msgid "<span class=\"meta-nav\">&laquo;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&laquo;</span> Posts mais antigos"
+
+#: loop.php:27
+#: loop.php:186
+msgid "Newer posts <span class=\"meta-nav\">&raquo;</span>"
+msgstr "Posts mais recentes <span class=\"meta-nav\">&raquo;</span>"
+
+#: loop.php:37
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Desculpas, mas nenhum resultado foi encontrado para o arquivo solicitado. Talvez buscar por outras palavras vai ajudar a encontrar um post relacionado."
+
+#: loop.php:62
+#: loop.php:95
+msgid "gallery"
+msgstr "galeria"
+
+#: loop.php:64
+#: loop.php:106
+#: loop.php:136
+msgid "Edit"
+msgstr "Editar"
+
+#: loop.php:84
+#, php-format
+msgid "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr "Esta galeria contém <a %1$s>%2$s fotos</a>."
+
+#: loop.php:95
+msgid "More Galleries"
+msgstr "Mais Galerias"
+
+#: loop.php:97
+#: loop.php:121
+#: loop.php:171
+msgid "1 Comment"
+msgstr "1 Comentário"
+
+#: loop.php:97
+#: loop.php:121
+#: loop.php:171
+msgid "% Comments"
+msgstr "% Comentários"
+
+#: loop.php:104
+msgid "asides"
+msgstr ""
+
+#: loop.php:113
+#: loop.php:149
+msgid "Read more <span class=\"meta-nav\">&raquo;</span>"
+msgstr "Leia mais <span class=\"meta-nav\">&raquo;</span>"
+
+#: loop.php:150
+msgid "Post pages:"
+msgstr "Página de Posts"
+
+#: loop.php:158
+#, php-format
+msgid "<span class=\"%1$s\">Categories: </span> %2$s"
+msgstr "<span class=\"%1$s\">Categorias: </span> %2$s"
+
+#: loop.php:167
+#, php-format
+msgid "<span class=\"%1$s\">Tags:</span> %2$s"
+msgstr ""
+
+#: page.php:21
+#: page.php:23
+msgid "Edit Page"
+msgstr "Editar Página"
+
+#: page.php:28
+#: single.php:31
+msgid "(more...)"
+msgstr "(mais...)"
+
+#: page.php:33
+#: single.php:36
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: page.php:34
+#: single.php:38
+msgid "Comments (0)"
+msgstr "Comentários (0)"
+
+#: page.php:34
+#: single.php:38
+msgid "Comments (1)"
+msgstr "Comentários (1)"
+
+#: page.php:34
+#: single.php:38
+msgid "Comments (%)"
+msgstr "Comentários (%)"
+
+#: page.php:44
+#: single.php:44
+msgid "Sorry, no posts matched your criteria."
+msgstr "Desculpe, mas não foi encontrado na sua busca."
+
+#: page.php:47
+#: single.php:47
+msgid "&laquo; Newer Posts"
+msgstr "&laquo; Posts Novos"
+
+#: page.php:47
+#: single.php:47
+msgid "Older Posts &raquo;"
+msgstr "Posts Antigos &raquo;"
+
+#: search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultados para: $s"
+
+#: search.php:19
+msgid "Nothing Found"
+msgstr "Nada encontrado"
+
+#: search.php:21
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Desculpe, mas não foi encontrado na sua busca. Por favor tente uma busca com palavras diferentes."
+
+#: single.php:24
+#: single.php:26
+msgid "Edit Post"
+msgstr "Editar Post"
+
+#: single.php:37
+msgid "Posted under "
+msgstr "Postado em "
+
+#: single.php:37
+msgid "and tagged with "
+msgstr "a com a tag"
+
+#: tag.php:12
+#, php-format
+msgid "Posts Tagged With: %s"
+msgstr "Posts com a Tag: %s"
+
+#: admin/options.php:3
+msgid "You do not have sufficient permissions to manage options for this site."
+msgstr "Você não tem permissão suficiente para gerenciar as opções deste site."
+
+#: admin/options.php:40
+#, php-format
+msgid ""
+"<div id=\"message\" class=\"updated below-h2\">\n"
+"            <p>\n"
+"                Options updated. <a href=\"%s\" target=\"_blank\">View your site</a> to see how it looks.\n"
+"            </p>%s\n"
+"        </div>"
+msgstr ""
+"<div id=\"message\" class=\"updated below-h2\">\n"
+"            <p>\n"
+"                Opções atualizadas. <a href=\"%s\" target=\"_blank\">Vizualize seu site</a> para ver como ele está.\n"
+"            </p>%s\n"
+"        </div>"
+
+#: admin/options.php:46
+msgid "<p>I see you removed the attribution. Does this mean we're not friends any more?</p>"
+msgstr "<p>Vejo que você removeu a atribuição. Isso significa que nós não somos mais amigos?</p>"
+
+#: admin/options.php:90
+msgid "Adventure Journal Options"
+msgstr "Opções do Adventure Journal"
+
+#: admin/options.php:99
+msgid "This screen allows you to customize advanced options exclusive to Adventure Journal. Customizing your website has never been easier!"
+msgstr "Esta tela permite que você personalize opções avançadas e exclusivas do Adventure Journal. Personalizar seu site nunca foi tão fácil."
+
+#: admin/options.php:103
+msgid "Site Layout"
+msgstr "Layout do Site"
+
+#: admin/options.php:104
+msgid "Your site can be displayed in a variety of different layouts. Please note that changing layouts may require you to tweak your widget settings. Also keep in mind that not all <em>page templates</em> are compatible with all site layouts."
+msgstr "Seu site pode ser exibido em uma variedade de layouts diferentes. Note que a mudança layouts podem exigir que você ajuste as configurações de seus widgets. Também tenha em mente que nem todos os <em>modelos de página</em> são compatíveis com todos os layouts site."
+
+#: admin/options.php:110
+msgid "1 Column<br/>(No Sidebar)"
+msgstr "1 Coluna<br />(Sem Sidebar)"
+
+#: admin/options.php:117
+msgid "2 Columns <br />(Content Left)"
+msgstr "2 Colunas <br />(Conteúdo a Esquerda)"
+
+#: admin/options.php:124
+msgid "2 Columns <br />(Content Right)"
+msgstr "2 Colunas <br />(Conteúdo a Direita)"
+
+#: admin/options.php:131
+msgid "3 Columns <br/>(Content Middle)"
+msgstr "3 Colunas <br />(Conteúdo ao Centro)"
+
+#: admin/options.php:138
+msgid "3 Columns <br/>(Content Left)"
+msgstr "3 Colunas <br />(Conteúdo a Esquerda)"
+
+#: admin/options.php:148
+msgid "Site Title &amp; Description"
+msgstr "Título do Site &amp; Descrição"
+
+#: admin/options.php:149
+msgid "You can choose how you want your site title to display. You can choose a custom image, or completely hide the paperclipped title scrap (which is useful if you plan on using the header image as your title)."
+msgstr "Você pode escolher como deseja que o título do seu site apareça. Você pode escolher uma imagem personalizada, ou esconder completamente \"papel com clips\" do título (que é útil se você deseja usar a imagem de cabeçalho como o seu título)."
+
+#: admin/options.php:155
+msgid "Default (Text Only)"
+msgstr "Padrão (Apenas Texto)"
+
+#: admin/options.php:159
+msgid "Logo (Custom Image)"
+msgstr "Logo (Imagem Personalizada)"
+
+#: admin/options.php:164
+msgid "No Title"
+msgstr "Sem Título"
+
+#: admin/options.php:171
+msgid "Custom Logo Location:"
+msgstr "Localização do Logo Personalizado"
+
+#: admin/options.php:172
+msgid "Image height should be <br />less than 90 pixels."
+msgstr "Altura da imagem deve ser <br />menos de 90 pixels."
+
+#: admin/options.php:176
+msgid "<br /> Notice: File may not exist at http://"
+msgstr "<br /> Aviso: Arquivo pode não existir em http://"
+
+#: admin/options.php:177
+msgid "For best results, use an image file with a transparent background such as png."
+msgstr "Para melhres resultados, use um arquivo de imagem com um fundo transparente como um png."
+
+#: admin/options.php:185
+msgid "Crumbled Paper Background"
+msgstr "Papel Amassado com fita"
+
+#: admin/options.php:186
+msgid "By default, Adventure Journal only uses a neat \"crumbled paper with tape\" texture for stickied posts. If you would like this texture to appear on ALL post listings, choose the \"All Posts\" option below."
+msgstr "Por padrão, Adventure Journal utiliza apenas um \"papel amassado com fita\" de textura para posts stickied. Se você quer que esta textura para aparecer em todas os posts da listas, escolha \"Todas as mensagens\"  na opção abaixo."
+
+#: admin/options.php:192
+msgid "<strong>Stickied Posts Only</strong> (default)"
+msgstr "<strong>Somente Posts Stickied</strong> (padrão)"
+
+#: admin/options.php:198
+msgid "<strong>All Posts</strong>"
+msgstr "<strong>Todos os Posts</strong>"
+
+#: admin/options.php:208
+msgid "Custom Stylesheet"
+msgstr "CSS Personalizado"
+
+#: admin/options.php:209
+msgid ""
+"You can use a custom stylesheet to override the default Adventure Journal styles.\n"
+"                    We suggest you keep the custom css file in the <code>/wp-content/</code>\n"
+"                    directory so that upgrades to WordPress or Adventure Journal don't erase your CSS."
+msgstr ""
+"Você pode usar um estilo personalizado para substituir o padrão estilos Jornal Adventure.\n"
+"                     Sugerimos que você mantenha o arquivo css personalizado no diretório\n"
+"                     <code>/wp-content/</code> para que atualizações do WordPress ou Jornal Adventure não apagam o seu CSS."
+
+#: admin/options.php:215
+msgid "CSS File Location:"
+msgstr "Localização do Arquivo CSS"
+
+#: admin/options.php:220
+msgid "Notice: File may not exist at http://"
+msgstr "Aviso: o arquivo pode não existir em http://"
+
+#: admin/options.php:228
+msgid "Custom Sidebar Width"
+msgstr "Largura Personalizada da Coluna"
+
+#: admin/options.php:229
+msgid "By default, Adventure Journals sidebars are 220 pixels wide. For some widgets and advertisements, this may be too narrow. To increase the width of the sidebar, enter a new value below."
+msgstr "Por padrão, a coluna do Adventure Journals tem 220 pixels de largura. Para alguns widgets e anúncios, isto pode ser muito estreito. Para aumentar a largura da coluna, informe um novo valor abaixo."
+
+#: admin/options.php:231
+#, php-format
+msgid "Note: If you are using a two-sidebar layout, please take this into account, as you may be dramatically decreasing the size of your content area. You may also need to use the %s plugin to adjust the size of your featured images if they become too large for the content area."
+msgstr "Nota: Se você estiver usando um layout de duas colunas, por favor, levar isso em conta, como você pode estar diminuindo drasticamente o tamanho da sua área de conteúdo. Você também pode precisar de usar o plugin %s para ajustar o tamanho de suas imagens destacadas se elas se tornarem demasiado grande para a área de conteúdo."
+
+#: admin/options.php:235
+msgid "Custom Header Size"
+msgstr "Tamanho Personalizado de Cabeçalho"
+
+#: admin/options.php:236
+#, php-format
+msgid "To change the vertical size of the header image, first enter a value in below, save changes and then upload your image on the <a href=\"%s\">header page</a>. The default value is 360."
+msgstr "Para alterar o tamanho vertical da imagem do cabeçalho, primeiro informe um valor abaixo, salve as alterações e então envie a sua imagem na <a href=\"%s\">página cabeçalho</a>. O valor padrão é 360."
+
+#: admin/options.php:241
+msgid "Featured Header Images"
+msgstr "Cabeçalhos Destacados"
+
+#: admin/options.php:242
+msgid "Enable this option if you would like featured images to replace your site header on single pages. When enabled, featured images will no longer appear in blog listings."
+msgstr "Habilite esta opção se você quiser imagens destacadas para substituir o seu site nas páginas de cabeçalho único. Quando ativado, imagens destacasdas não aparecerá mais na listagem de blog."
+
+#: admin/options.php:243
+msgid "Use featured images as custom site header, if available"
+msgstr "Usar imagens de destaque como cabeçalhos personalizado, se disponível"
+
+#: admin/options.php:244
+#, php-format
+msgid "Note: If your featured images aren't appearing after you enable this option, first ensure that your header images are <em>at least</em> 920 pixels wide. If you're still having trouble, please use the %s plugin to update your currently-saved header images."
+msgstr "Nota: Se as imagens não estão aparecendo destaque depois que você habilitar esta opção, em primeiro lugar verifique se suas imagens de cabeçalho são <em>pelo menos</em> 920 pixels de largura. Se você ainda está tendo problemas, por favor use o plugin %s para atualizar suas imagens cabeçalho atualmente salvos."
+
+#: admin/options.php:248
+msgid "Browser Update Helper"
+msgstr "Assistente de Atualização de Navegador"
+
+#: admin/options.php:249
+msgid "Adventure Journal now includes a customized version of the upcoming \"Browser Update Helper\" plugin, a new initiative meant to speed up adoption of newer, faster, more secure web browsers. This feature temporarily displays an attractive, helpful notice at the top of the site when a users browser is badly out of date. Leaving this feature on <em>will</em> make the web a better, safer place. To disable this feature, uncheck the box below."
+msgstr "Adventure Journal inclui agora uma versão personalizada do próximo plugin \"Assistente de Atualização de Navegador\", uma nova iniciativa destinada a acelerar a adoção de navegadores novos, mais rápidos e mais seguros. Este recurso exibe temporariamente uma notificação no topo do site, quando um navegador dos usuários está muito desatualizado. Deixando esse recurso ativo <em>vai</em> tornar a web um lugar melhor, mais seguro. Para desativar esse recurso, desmarque a caixa abaixo."
+
+#: admin/options.php:249
+msgid "Why include this?"
+msgstr "Por que incluir isto?"
+
+#: admin/options.php:250
+msgid "Make the web a better, safer place"
+msgstr "Transforme a web em um lugar melhor, mais seguro"
+
+#: admin/options.php:254
+msgid "Layout"
+msgstr ""
+
+#: admin/options.php:255
+#, php-format
+msgid "If you would like to change the site's layout (number of columns), visit the <a href=\"%s\">layout screen</a>"
+msgstr "Se você gostaria de mudar o layout do site (número de colunas), visite o <a href=\"%s\">layout screen</a>"
+
+#: admin/options.php:259
+msgid "Save Changes"
+msgstr "Salvar Alterações"
+

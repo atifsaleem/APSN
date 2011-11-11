@@ -1,0 +1,530 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Adventure Journal 1.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-30 11:42-0800\n"
+"PO-Revision-Date: 2011-05-04 14:24+1100\n"
+"Last-Translator: Manuel Krebber <manni@dronf.net>\n"
+"Language-Team: Manuel Krebber <manni@dronf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: 2\n"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/404.php:13
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:35
+msgid "Not Found"
+msgstr "Nicht gefunden"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/404.php:15
+msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
+msgstr "Leider konnte diese Seite nicht gefunden werden - vielleicht hilft die Suche weiter?"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/archive.php:16
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Tägliches Archiv: <span>%s</span>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/archive.php:18
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Monatliches Archiv: <span>%s</span>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/archive.php:20
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Jährliches Archiv: <span>%s</span>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/archive.php:22
+msgid "Blog Archives"
+msgstr "Blog Archiv"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/author.php:23
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Autor Archiv: %s"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/author.php:31
+#, php-format
+msgid "About %s"
+msgstr "Über %s"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:9
+#, php-format
+msgid "Comments on %s"
+msgstr "Kommentare zu %s"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:29
+msgid "Comments"
+msgstr "Kommentare"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:31
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr> feed for comments on this post."
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>-Feed für die Kommentare zum Artikels."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:34
+msgid "The <abbr title=\"Universal Resource Locator\">URL</abbr> to TrackBack this entry is:"
+msgstr "Die <abbr title=\"Universal Resource Locator\">URL</abbr> für einen TrackBack zu diesem Eintrag ist:"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:52
+msgid "Comment"
+msgstr "Kommentar"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:52
+msgid "Trackback"
+msgstr "Trackback"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:52
+msgid "Pingback"
+msgstr "Pingback"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:52
+msgid "by"
+msgstr "von"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:58
+msgid "No comments yet."
+msgstr "Noch keine Kommentare."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:62
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:97
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:121
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:171
+msgid "Leave a comment"
+msgstr "Schreib einen Kommentar"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:63
+msgid "Line and paragraph breaks automatic, e-mail address never displayed, <acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed:"
+msgstr "Zeilen- und Absatzumbrüche automatisch, E-Mail-Adresse immer unsichtbar, <acronym title=\"Hypertext Markup Language\">HTML</acronym> erlaubt:"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:67
+#, php-format
+msgid "Logged in as %s."
+msgstr "Eingeloggt als s %s."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:67
+msgid "Log out of this account"
+msgstr "Ausloggen"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:67
+msgid "Log out &raquo;"
+msgstr "Ausloggen &raquo;"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:71
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments.php:69
+msgid "Name"
+msgstr "Name"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:76
+msgid "E-mail"
+msgstr "E-Mail"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:81
+msgid "<abbr title=\"Universal Resource Locator\">URL</abbr>"
+msgstr "<abbr title=\"Universal Resource Locator\">URL</abbr>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:86
+msgid "Your Comment"
+msgstr "Dein Kommentar"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:99
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Leider sind im Moment keine Kommentare erlaubt."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:104
+msgid "Close this window."
+msgstr "Fenster schließen."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:115
+#, php-format
+msgid "<cite>Powered by <a href=\"http://wordpress.org\" title=\"%s\"><strong>WordPress</strong></a></cite>"
+msgstr "<cite>Betrieben mit <a href=\"http://wordpress.org\" title=\"%s\"><strong>WordPress</strong></a></cite>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments-popup.php:115
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Betrieben mit Wordpress."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments.php:10
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Dieser Artikel ist passwortgeschützt. Gibt das Passwort ein, um die Kommentare zu sehen."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments.php:28
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments.php:47
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Ältere Kommentare"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments.php:29
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments.php:48
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Neuere Kommentare <span class=\"meta-nav\">&rarr;</span>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments.php:59
+msgid "Comments are closed."
+msgstr "Keine Kommentare erlaubt."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments.php:71
+msgid "Email"
+msgstr "E-Mail"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/comments.php:73
+msgid "Website"
+msgstr "Webseite"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:113
+msgid "Primary Menu"
+msgstr "Hauptmenü"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:114
+msgid "Footer Menu"
+msgstr "Menü in der Fußzeile"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:170
+msgid "Egypt"
+msgstr "Ägypten"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:176
+msgid "Cart"
+msgstr "Karren"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:182
+msgid "Flower"
+msgstr "Blume"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:188
+msgid "Hut"
+msgstr "Hütte"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:270
+msgid "Continue reading <span class=\"meta-nav\">&raquo;</span>"
+msgstr "Weiterlesen <span class=\"meta-nav\">&raquo;</span>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:394
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:394
+#, php-format
+msgid "Powered by %s"
+msgstr "Betrieben durch %s"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:417
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:64
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:106
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:136
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/page.php:19
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:22
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:420
+msgid "\t\t\t\t\t<span class='unapproved'>Your comment is awaiting moderation.</span>\n"
+msgstr "\t\t\t\t\t<span class='unapproved'>Dein Kommentar wartet auf seine Freischaltung.</span>\n"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:531
+msgid "Layout"
+msgstr "Layout"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:533
+msgid "Adventure Journal"
+msgstr "Adventure Journal"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:555
+#, php-format
+msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+msgstr "<span class=\"%1$s\">Geschrieben am</span> %2$s <span class=\"meta-sep\">von</span> %3$s"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/functions.php:575
+msgid "<p>Adventure Journal supports different page layouts without any additional coding. Simply select the layout you want to use on your site and click Save Changes."
+msgstr "<p>Adventure Journal unterstützt verschiedene Seitenlayouts ohne weiteres Frickeln. Einfach das gewünschte Layout auswählen und auf \"Änderungen speichern\" klicken."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/header.php:23
+#, php-format
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:26
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:185
+msgid "<span class=\"meta-nav\">&laquo;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&laquo;</span> Ältere Artikel"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:27
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:186
+msgid "Newer posts <span class=\"meta-nav\">&raquo;</span>"
+msgstr "Neuere Artikel <span class=\"meta-nav\">&raquo;</span>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:37
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Leider wurden gibt es in diesem Archiv nichts zu sehen - vielleicht hilft die Suche weiter?"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:62
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:95
+msgid "gallery"
+msgstr "Galerie"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:84
+#, php-format
+msgid "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr "Diese Galerie enthält <a %1$s>%2$s Bilder</a>."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:95
+msgid "More Galleries"
+msgstr "Mehr Galerien"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:97
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:121
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:171
+msgid "1 Comment"
+msgstr "Ein Kommentar"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:97
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:121
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:171
+msgid "% Comments"
+msgstr "% Kommentare"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:104
+msgid "asides"
+msgstr "Asides"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:113
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:149
+msgid "Read more <span class=\"meta-nav\">&raquo;</span>"
+msgstr "Weiterlesen <span class=\"meta-nav\">&raquo;</span>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:150
+msgid "Post pages:"
+msgstr "Artikel Seiten"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:158
+#, php-format
+msgid "<span class=\"%1$s\">Categories: </span> %2$s"
+msgstr "<span class=\"%1$s\">Kategorien: </span> %2$s"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/loop.php:167
+#, php-format
+msgid "<span class=\"%1$s\">Tags:</span> %2$s"
+msgstr "<span class=\"%1$s\">Schlagwörter:</span> %2$s"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/page.php:22
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:25
+msgid "(more...)"
+msgstr "(mehr...)"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/page.php:26
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:38
+msgid "Sorry, no posts matched your criteria."
+msgstr "Leider wurden keine passenden Artikel gefunden."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/page.php:29
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:41
+msgid "&laquo; Newer Posts"
+msgstr "&laquo; Neuere Artikel"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/page.php:29
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:41
+msgid "Older Posts &raquo;"
+msgstr "Ältere Artikel &raquo;"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/search.php:19
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/search.php:21
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Leider wurden keine passenden Artikel gefunden - bitte versuche noch einmal es mit anderen Suchbegriffen."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:30
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:31
+msgid "Posted under "
+msgstr "Eingeordnet unter"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:31
+msgid "and tagged with "
+msgstr "und beschlagwortet mit"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:32
+msgid "Comments (0)"
+msgstr "Kommentare (0)"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:32
+msgid "Comments (1)"
+msgstr "Kommentare (1)"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/single.php:32
+msgid "Comments (%)"
+msgstr "Kommentare (%)"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/tag.php:13
+#, php-format
+msgid "Posts Tagged With: %s"
+msgstr "Beiträge beschlagwortet mit: %s"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/appearance-layout.php:14
+#, php-format
+msgid "<div id=\"message\" class=\"updated below-h2\"><p>Layout updated. <a href=\"%s\">Visit your site</a> to see how it looks.</p></div>"
+msgstr "<div id=\"message\" class=\"updated below-h2\"><p>Layout geändert. <a href=\"%s\">Besuch deine Seite</a> um es in Aktion zu sehen.</p></div>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/appearance-layout.php:25
+msgid "Page Layout"
+msgstr "Seitenlayout"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/appearance-layout.php:33
+msgid "1 Column<br/>(No Sidebar)"
+msgstr "1 Spalte<br/>(Keine Seitenleiste)"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/appearance-layout.php:40
+msgid "2 Columns <br />(Content Left)"
+msgstr "2 Spalten <br />(Inhalt links)"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/appearance-layout.php:47
+msgid "2 Columns <br />(Content Right)"
+msgstr "2 Spalten <br />(Inhalt rechts)"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/appearance-layout.php:54
+msgid "3 Columns <br/>(Content Middle)"
+msgstr "3 Spalten<br/>(Inhalt in der Mitte)"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/appearance-layout.php:61
+msgid "3 Columns <br/>(Content Left)"
+msgstr "3 Spalten<br/>(Inhalt links)"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:3
+msgid "You do not have sufficient permissions to manage options for this site."
+msgstr "Du hast nicht die nötigen Rechte um die Einstellungen für diese Seite zu ändern."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:37
+#, php-format
+msgid ""
+"<div id=\"message\" class=\"updated below-h2\">\n"
+"            <p>\n"
+"                Options updated. <a href=\"%s\" target=\"_blank\">View your site</a> to see how it looks.\n"
+"            </p>%s\n"
+"        </div>"
+msgstr ""
+"<div id=\"message\" class=\"updated below-h2\">\n"
+"            <p>\n"
+"                Einstellungen geändert. <a href=\"%s\" target=\"_blank\">Besuch deine Seite</a> um die Änderungen zu sehen.\n"
+"            </p>%s\n"
+"        </div>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:43
+msgid "<p>I see you removed the attribution. Does this mean we're not friends any more?</p>"
+msgstr "<p>Wie ich sehe, hast du den Hinweis auf unsere Webseite entfernt. Sind wir jetzt keine Freunde mehr?</p>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:88
+msgid "Adventure Journal Options"
+msgstr "Adventure Journal Einstellungen"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:93
+msgid "Custom Stylesheet"
+msgstr "Eigenes Stylesheet"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:94
+msgid ""
+"You can use a custom stylesheet to override the default Adventure Journal styles.\n"
+"                    We suggest you keep the custom css file in the <code>/wp-content/</code>\n"
+"                    directory so that upgrades to WordPress or Adventure Journal don't erase your CSS."
+msgstr ""
+"Du kannst ein eigenes Stylesheet benutzen, um das Adventure Journal Theme deinen Bedürfnissen anzupassen.\n"
+"                    Wir schlagen vor, dass du diese Stylesheet Datei im <code>/wp-content/</code> Verzeichnis\n"
+"                    platzierst, damit Aktualisierungen von Wordpress oder dem Theme diese nicht löschen."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:100
+msgid "CSS File Location:"
+msgstr "CSS Datei:"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:105
+msgid "Notice: File does not exist! (http://"
+msgstr "Warnung: Datei existiert nicht! (http://"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:112
+msgid "Site Title &amp; Description"
+msgstr "Seiten Titel &amp; Beschreibung"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:115
+msgid "Default"
+msgstr "Standard"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:118
+msgid "No Title"
+msgstr "Kein Titel"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:121
+msgid "Custom Logo"
+msgstr "Eigenes Logo"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:129
+msgid "Custom Logo Location:"
+msgstr "Pfad zum eigenen Logo:"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:130
+msgid "Image height should be <br />less than 90 pixels."
+msgstr "Höhe des Bildes sollte <br/>weniger als 90 Pixel sein."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:134
+msgid "<br /> Notice: File does not exist! (http://"
+msgstr "<br /> Warnung: Datei existiert nicht! (http://"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:135
+msgid "For best results, use a image file with a transparent background such as gif or png."
+msgstr "Am besten benutzt du ein Bild mit transparentem Hintergrund z.B. gif oder png."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:141
+msgid "Crinkled Paper Background"
+msgstr "Zerknitterter Papierhintergrund"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:142
+msgid "By default, Adventure Journal only uses the \"crinkled paper\" texture to all stickied posts. If you would like this texture to appear for ALL post listings, you can set that here."
+msgstr "Standardmäßig benutzt Adventure Journal den Hintergrund mit dem zerknitterten Papier nur für gepinnte Artikel. Wenn du diesen Hintergrund für alle Artikel verwenden möchtest, dann kannst du das hier ändern."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:149
+msgid "<strong>Stickied Posts Only</strong> (default)"
+msgstr "<strong>Nur gepinnte Artikel</strong> (Standard)"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:155
+msgid "<strong>All Posts</strong>"
+msgstr "<strong>Alle Artikel</strong>"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:166
+msgid "Custom Header Size"
+msgstr "Andere Größe für die Kopfzeile"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:167
+#, php-format
+msgid "To change the vertical size of the header image, first enter a value in below, save changes and then upload your image on the <a href=\"%s\">header page</a>. The default value is 360."
+msgstr "Um die Höhe des Kopfzeilen-Bildes zu ändern, gib hier einen Wert ein, speichere die Änderungen und dann lade dein neues Bild <a href=\"%s\">auf dieser Seite</a> hoch. Der Standardwert ist 360."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:172
+msgid "Featured Images"
+msgstr "Artikelbilder"
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:173
+msgid "Enable this option if you would like featured images to replace your site header on single pages. When enabled, featured images will no longer appear in blog listings."
+msgstr "Aktiviere diese Einstellung, wenn das Artikelbild das Bild in der Kopfzeile bei Artikeln oder Einzelseiten ersetzen soll. Wenn diese Einstellung aktiviert ist, erscheinen die Artikelbilder nicht mehr in der Artikelauflistung."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:174
+msgid "Use featured images as custom site header, if available"
+msgstr "Benutze das Artikelbild für die Kopfzeile, falls vorhanden."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:180
+#, php-format
+msgid "You can change the site's layout from the <a href=\"%s\">layout screen</a>."
+msgstr "Du kannst das Layout der Seite auf <a href=\"%s\">dieser Seite</a> ändern."
+
+#: C:\Xampp\htdocs\PluginDev.ContextureIntl.com\wp-content\themes\adventurejournal/admin/options.php:183
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+

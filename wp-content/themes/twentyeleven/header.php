@@ -48,6 +48,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/overlay.js"> </script>
 
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -75,7 +76,7 @@
 				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
-
+                        
 			<?php
 				// Check to see if the header image has been removed
 				$header_image = get_header_image();
@@ -92,7 +93,7 @@
 						// Houston, we have a new header image!
 						echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
 					else : ?>
-					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+					<img id="header" src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="APSN" />
 				<?php endif; // end check for featured image or standard header ?>
 			</a>
 			<?php endif; // end check for removed header image ?>
@@ -102,10 +103,10 @@
 				if ( 'blank' == get_header_textcolor() ) :
 			?>
 				<div class="only-search<?php if ( ! empty( $header_image ) ) : ?> with-image<?php endif; ?>">
-				<?php get_search_form(); ?>
+				<?php //get_search_form(); ?>
 				</div>
 			<?php
-				else :
+				//else :
 			?>
 				<?php get_search_form(); ?>
 			<?php endif; ?>
@@ -141,5 +142,5 @@ break;}
 }
 ?>
 
-</script>	
+</script>
 	<div id="main">

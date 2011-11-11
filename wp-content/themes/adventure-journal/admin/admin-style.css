@@ -1,0 +1,38 @@
+/********************* Admin Options ********************
+.wrap{max-width:800px;}*/
+
+
+/********************* Layout Section *********************/
+#admin-layout,.admin-choosebox{padding:0px;margin:0px;margin-bottom:1em;width:800px;}
+    #admin-layout td,.admin-choosebox td{ vertical-align:middle; padding:10px; border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px; }
+    #admin-layout .active-layout,.admin-choosebox .active-layout{ background:#e4e4e4; }
+    #admin-layout td:hover,.admin-choosebox td:hover{ background-color:#d5d5d5; }
+        #admin-layout td input,.admin-choosebox td input{ float:left; margin-top:40px;clear:left;}
+        #admin-layout td label,.admin-choosebox td label{ display:block; float:left; text-align:center; margin-left:20px;clear:right; }
+        @-moz-document url-prefix() {
+            #admin-layout td img { margin-left:35px; }
+        }
+
+.site-title{}
+	.site-title p {text-align:center;}
+	.site-title img{border: 1px solid #999999;}
+	.site-title td{ vertical-align:middle; padding:8px; border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px; }
+	.site-title td:hover{ background-color:#d5d5d5; }
+	.site-title .active-layout{ background:#e4e4e4; }
+	.site-title td input{ float:left; margin-top:40px;margin-right:20px;}
+	
+.custom-logo{background-color:#F0F0F0;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;| 
+
+/********************* Navigation Section *********************/
+.nav-menus-group table{}
+	.nav-menus-group table td, .nav-menus-group table th{padding:0px;border:0px;padding-bottom:5px;}
+	.nav-menus-group table .link-text{width:155px;}
+		.nav-menus-group table .link-text input{width:150px;}
+	.nav-menus-group table .url{width:405px;}
+		.nav-menus-group table .url input{width:400px;}
+	.nav-menus-group table .title{width:155px;}
+		.nav-menus-group table .title input{width:150px;}
+	.nav-menus-group table .display{width:115px;}
+		.nav-menus-group table .display input{width:110px;}
+	.nav-menus-group table .delete{width:80px;text-align:center;}
+		.nav-menus-group table .delete input{width:75px;}

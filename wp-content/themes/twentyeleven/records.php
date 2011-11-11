@@ -42,7 +42,7 @@ echo "var page_id=$post->ID;";
 
 function email(e)
 {
-$j.get("wp-content/themes/twentyeleven/mailform.php?page="+page_id,function(data)
+$j.get("wp-content/themes/twentyeleven/mailform.php?page="+page_id+"&email="+e.id,function(data)
 {
 $j(data).modal();
 }
