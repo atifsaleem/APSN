@@ -35,6 +35,7 @@ function show_array($array, $level, $sub){
 }
 
 function html_show_array($array){
+
   echo "<table border=\"2\">\n";
   show_array($array, 1, 0);
   echo "</table>\n";

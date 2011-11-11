@@ -591,3 +591,12 @@ function twentyeleven_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
 
+function my_print_scripts() {
+    if (!is_admin()) {
+        $url = get_bloginfo('template_url');
+        wp_enqueue_script('jquery-simplemodal', $url . '/js/jquery.simplemodal.js', array('jquery'), true);
+        wp_enqueue_script('growl',get_bloginfo('template_directory').'/js/growl.js',array('jquery'));  
+
+    }
+}
+add_action('wp_print_scripts', 'my_print_scripts');

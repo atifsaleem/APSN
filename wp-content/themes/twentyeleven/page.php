@@ -4,7 +4,7 @@ wp_enqueue_script('dependencies',get_bloginfo('template_directory').'/dependenci
 wp_enqueue_script('visualsearch', get_bloginfo('template_directory').'/visualsearch.js',array('jquery','dependencies'));
 wp_enqueue_style('visualsearch-style', get_bloginfo('template_directory').'/visualsearch-datauri.css', false, false, 'screen');
 wp_enqueue_style('visualsearch-style', get_bloginfo('template_directory').'/visualsearch.css', false, false, 'screen');
-wp_enqueue_script('dependencies',get_bloginfo('template_directory').'/js/overlay.js',array('jquery')); 
+
 
 ?>
 
@@ -44,6 +44,10 @@ get_header(); ?>
 				<?php if ($post->ID==20)
 				include('profile.php');
 				?>
+				<?php if ($post->ID==46)
+				include('rejected.php');
+				?>
+
 				<?php if ($post->ID==39)
 				include('form.php');
 				?>

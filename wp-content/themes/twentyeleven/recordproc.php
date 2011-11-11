@@ -42,7 +42,9 @@ $Dwelling = array("1"=>"HDB Room","2"=>"HD Executive","3"=>"HUDC","4"=>"Semi-det
 $PrevVolunExp = array("1" => "Yes", "0" => "No");
 $Availability = array("1" => "Once Weekly", "2" => "Twice Weekly", "3" => "More than Twice Weekly");
 $var.="<center><button id=\"".$email."\" style=\"margin-bottom:30px;\" onClick=\"approve(this);\">Approve</button></center>";
-$var.="<button onClick=\"close(this);\">x</button>";
+$var.="<center><button id=\"".$email."-email\" style=\"margin-bottom:30px;\" onClick=\"email(this);\">Email</button></center>";
+$var.="<center><button id=\"".$email."-email\" style=\"margin-bottom:30px;\" onClick=\"reject(this);\">Reject</button></center>";
+echo "<button id=\"".$email."-close\" style=\"margin-bottom:30px;\" onClick=\"close_record(this);\" style=\"float:left;\">x</button>";
 $i=0;
 foreach($forms as $form)
 {

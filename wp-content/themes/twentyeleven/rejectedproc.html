@@ -1,11 +1,10 @@
-</script>
 <?php 
 include ('../../../wp-blog-header.php');
 include("show_array.php");
 
 $email = $_GET['email'];
 global $wpdb;
-$sql="SELECT * FROM wp_volunteers_details WHERE Email=\"".$email."\"";
+$sql="SELECT * FROM rejected_applicants WHERE Email=\"".$email."\"";
 $records = $wpdb->get_results($sql) or die(mysql_error());
 foreach($records as $record)
 {

@@ -14,8 +14,7 @@ border: none;
 <?php echo "var page_id=$post->ID;" ;?>
 function email(e)
 {
-var id=e.id;
-$j.get("wp-content/themes/twentyeleven/mailform.php?page="+page_id+"&email="+id,function(data)
+$j.get("wp-content/themes/twentyeleven/mailform.php?page="+page_id,function(data)
 {
 $j(data).modal();
 }
@@ -53,7 +52,7 @@ $j(document).ready(function() {
 			  eval('var obj='+dataString);
               $query=$j("search_box_container2");
               $j("#VS").html('<span class="raquo">&raquo;</span> You searched for: <b>' + searchCollection.serialize() + '</b>');
-              $j.post(path+'/search-applicants.php',obj, function (data) {
+              $j.post(path+'/search-rejected-applicants.php',obj, function (data) {
               $j('#table-container').html(data);
               });
               $query.stop().animate({opacity : 1}, {duration: 300, queue: false});
@@ -177,7 +176,7 @@ var $j = jQuery.noConflict();
 function get_profile(e) 
 {
 var id= e.id;
-$j.get('wp-content/themes/twentyeleven/approveproc.php?email='+id,function(data){
+$j.get('wp-content/themes/twentyeleven/rejectedproc.php?email='+id,function(data){
  $j("#record-container").html(data);
   });
 
@@ -186,18 +185,17 @@ $j.get('wp-content/themes/twentyeleven/approveproc.php?email='+id,function(data)
 </script>
 <div id="table-container">
 <?php
-$sql = "SELECT Email, `First Name`, `Last Name` FROM wp_volunteers_details ORDER BY `Last Name`";
+$sql = "SELECT Email, `First Name`, `Last Name` FROM rejected_applicants ORDER BY `Last Name`";
 
-$result = $wpdb->get_results($sql) or die(mysql_error());
-$var.="<center><button style=\"margin-bottom:30px;\" onclick=\"close();\">x</button></center>";
+$result = $wpdb->get_results($sql);
 
-echo "<table id=\"approved-table\">";
+echo "<table id=\"rejected-table\" style=\"margin-top:80px;\">";
 echo "<tr> <th> Email </th> <th style=\"padding:10px\"> First name </th> <th style=\"padding:10px\"> Last Name</th> </tr>";
 
 foreach($result as $entry)
 {
 $names = get_object_vars($entry);
-echo "<tr id=\"$entry->Email\" class=\"record\" style=\"tr:hover{background-color: red;}\"onclick=\"get_profile(this);\"><td>".$entry->Email."</td>";
+echo "<tr id=\"$entry->Email\" class=\"record\" style=\"tr:hover{background-color: red; }\"onclick=\"get_profile(this);\"><td>".$entry->Email."</td>";
 echo "<td style=\"padding:10px\">".$names['First Name']."</td>";
 echo "<td style=\"padding:10px\">".$names['Last Name']."</td></tr>";
 }

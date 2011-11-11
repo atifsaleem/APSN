@@ -10,8 +10,8 @@ $path=get_bloginfo('template_directory');
 global $wpdb;
 get_header();
 extract($_POST);
-$wpdb->query("INSERT INTO event_details(name,description,organizer,venue,vacancies,sessions) VALUES ('$element_1','$element_2','$keymap[$element_4]','$element_3',$numSessions,$numVacancies)") or die(mysql_error());
-$results=$wpdb->get_results("SELECT MAX(eventID) AS id_great FROM event_details") or die(mysql_error());
+$wpdb->query("INSERT INTO event_details(name,description,organizer,venue,vacancies,sessions) VALUES ('$element_1','$element_2','$keymap[$element_4]','$element_3',$numSessions,$numVacancies)");
+$results=$wpdb->get_results("SELECT MAX(eventID) AS id_great FROM event_details");
 foreach($results as $result)
 $id=$result->id_great;
 for ($k=1;$k<=$numSessions;$k++)
@@ -61,7 +61,7 @@ $wpdb->query("UPDATE event_details SET `date_from`='$date' WHERE `eventID`=$id")
 }
 if ($k==$numSessions)
 {
-$wpdb->query("UPDATE event_details SET `date_to`='$date' WHERE `eventID`=$id") or die(mysql_error());
+$wpdb->query("UPDATE event_details SET `date_to`='$date' WHERE `eventID`=$id");
 }
 $wpdb->query("INSERT INTO session_details VALUES ($id,$k,'$date','$start_time','$end_time')");
 }
