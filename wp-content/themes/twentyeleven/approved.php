@@ -10,6 +10,13 @@ border: none;
 <div id="VS">
 </div>
 <div id="search_box_container2">
+</script>
+<script type="text/javascript">
+function see_record(e)
+{
+alert("Hi!");
+}
+</script>
 <script type="text/javascript">
 $j=jQuery.noConflict();
 <?php echo "var page_id=$post->ID;" ;?>
@@ -183,6 +190,13 @@ $j.get('wp-content/themes/twentyeleven/approveproc.php?email='+id,function(data)
   });
 
 
+}
+
+</script>
+<script type="text/javascript">
+function see_record(e)
+{
+alert("Hi!");
 }
 </script>
 <div id="table-container">

@@ -11,6 +11,7 @@ foreach($records as $record)
 {
 $names = get_object_vars($record);
 echo "<center><button id=\"".$email."-email\" style=\"margin-bottom:30px;\" onClick=\"email(this);\">Email</button></center>";
+echo "<center><button id=\"".$email."-record\" style=\"margin-bottom:30px;\" onClick=\"see_record(this);\">See records</button></center>";
 echo "<button id=\"".$email."-close\" style=\"margin-bottom:30px;\" onClick=\"close_record(this);\" style=\"float:left;\">x</button>";
 
 html_show_array($names);
